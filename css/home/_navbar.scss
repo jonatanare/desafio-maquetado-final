@@ -18,3 +18,16 @@
     }
 }
 
+
+.offcanvas{
+    &.offcanvas-start{
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .nav-link{
+        span{
+            margin-right: 4px;
+        }
+    }
+}
