@@ -1,0 +1,17 @@
+.btn-outline-primary {
+  color: rgb(59, 73, 223);
+  border-color: rgb(59, 73, 223);
+}
+.btn-outline-primary:hover {
+  background-color: rgb(59, 73, 223);
+  color: #fff;
+  text-decoration: underline;
+}
+
+.btn-avatar {
+  width: 48px;
+  height: 48px;
+}
+.btn-avatar .img-avatar {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
