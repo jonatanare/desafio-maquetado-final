@@ -14,4 +14,12 @@
 }
 .btn-avatar .img-avatar {
   width: 100%;
+}
+
+.offcanvas.offcanvas-start {
+  width: 90%;
+  max-width: 300px;
+}
+.offcanvas .nav-link span {
+  margin-right: 4px;
 }/*# sourceMappingURL=style.css.map */
