@@ -1,3 +1,13 @@
-.card-aside{
-    border-radius: 1rem;
+.aside{
+    &__list{
+        
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+        a{
+            text-decoration: none;
+            cursor:pointer;
+        }
+    }
 }
+
