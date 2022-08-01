@@ -245,4 +245,8 @@ label.date {
     padding-left: 0px !important;
     margin-left: 0px !important;
   }
+}
+header.fixed-top + main {
+  padding-top: calc(1.5rem + 56px);
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
