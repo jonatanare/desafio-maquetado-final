@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Desafio Final Maquetado</title>
+</head>
+
+<body style="background-color:whitesmoke;">
+
+    <header class="container">
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <section role="navigation " class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">DEV Community</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-home.svg"
+                                        alt="Icon"></span>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                        src="./assets/icons/icon-reading.svg" alt="Icon"></span>Reading List</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                        src="./assets/icons/icon-letter.svg" alt="Icon"></span>Listings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                        src="./assets/icons/icon-podcasts.svg" alt="Icon"></span>Podcasts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-video.svg"
+                                        alt="Icon"></span>Videos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-tags.svg"
+                                        alt="Icon"></span>Tags</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-faq.svg"
+                                        alt="Icon"></span>FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                        src="./assets/icons/icon-forem-shop.svg" alt="Icon"></span>Forem Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                        src="./assets/icons/icon-sponsors.svg" alt="Icon"></span>Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-about.svg"
+                                        alt="Icon"></span>About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                        src="./assets/icons/icon-contact.svg" alt="Icon"></span>Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img class="img-fluid"
+                                        src="./assets/icons/icon-guies.svg" alt="Icon"></span>Guides</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                        src="./assets/icons/icon-software-comparisons.svg" alt="Icon"></span>Software
+                                comparisons</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img style="height:calc( 50px - .3125rem * 2)" src="/assets/logos/logo-devto.png"></img>
+            </a>
+            <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                <input class="form-control mr-sm-2 w-auto" type="search" placeholder="Search" aria-label="Search">
+            </form>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerEasybank">
+                <div class="d-none d-md-flex ">
+                    <button class="btn btn-outline-primary m-auto">Create Post</button>
+                    <button class="btn btn-light btn-md">
+                        <img src="./assets/icons//icon-notifications.svg" alt="Icon notification">
+                    </button>
+                    <button class="btn rounded-pill btn-avatar">
+                        <img class="rounded-pill img-avatar" src="./assets/home/avatar-home.webp" alt="Avatar Session">
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="container-fluid">
+        <section class="container row mx-auto">
+            <aside class="d-none d-md-block col-md-2 p-0">
+                <div class="sidebar-container "></div>
+                <section class="menu">
+                    <div class="card p-3">
+                        <h3 class="text-primary">DEV Community</h3>
+                        <h3 class=""> is a community of 883,369 amazing developers</h3>
+                        <p class="light">We're a place where coders share, stay up-to-date and grow their careers.</p>
+                        <button class="btn btn-outline-primary mt-3 ">Create acount</button>
+                        <button class="btn bg-white mb-3">Log in</button>
+
+                    </div>
+                    <div class="card p-3">
+                        <div class="list-group">
+                            <a class="list-group-item" style="border:0;" href="#"><img src="/assets/icons/icon-home.svg"
+                                    alt="">Home</a>
+                            <a class="list-group-item" style="border:0;" href="#"><img
+                                    src="/assets/icons/icon-video.svg" alt="">Listings</a>
+                            <a class="list-group-item" style="border:0;" href="#"><img
+                                    src="/assets/icons/icon-video.svg" alt="">Podcats</a>
+                        </div>
+
+                    </div>
+
+                    <!-- <a class="d-block" href="#"><img src="/assets/icons/icon-home.svg" alt="">Home</a>
+                        <a class="d-block" href="#"><img src="/assets/icons/icon-video.svg" alt="">Listings</a>
+                        <a class="d-block" href="#"><img src="/assets/icons/icon-video.svg" alt="">Podcats</a> -->
+
+                </section>
+            </aside>
+            </aside>
+            <main class="col-12 col-md-10 col-lg-7">
+                <div class="mb-2">
+                        <a class="btn" href="#">Relevant</a>
+                        <a class="btn strong" href="#">Latest</a>
+                        <a class="btn strong" href="#">Top</a>                    
+                </div>
+                <article class="card p-4">
+                    <div class="d-flex ">
+                        <img src="/assets/icons/icon-about.svg" alt="">
+                        <div class="ms-2 "> 
+                            <h5 class="mb-0">Okanu</h5>
+                            <label class="date">Jul 30</label>
+                        </div>
+                    </div>
+                    <div class="p-3 ms-3 mt-2">
+                        <a  class="article__post--title" href="#">
+                            <h2>Programming and Properties of Programming Languages</h2>
+                        </a>
+                        <div>
+                            <a class="btn">#programming</a>
+                            <a class="btn">#webdev</a>
+                            <a class="btn">#productivity</a>
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <div>
+                            <a class="btn"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon"><title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                2 reactions
+                            </a>
+                            <a class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon"><title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                Add Comment
+                            </a>
+                            </div>
+                            <div>
+                                <span>1 min read</span>
+                                <a class="btn btn-secondary">Save</a>
+
+                            </div>
+                         </div>
+                    </div>
+
+                    
+
+                    
+                </article>
+            </main>
+            <aside class="d-none d-lg-block col-lg-3 p-0">
+
+                <div class="card p-3 ">
+                    <img class="my-3" src="/assets/home/publicidad_ejemplo.jfif" alt="">
+                    <h3 class="text-primary strong">Forem for android is here!</h3>
+                </div>
+                <section class="card mt-3">
+
+                    <div class="d-flex nav-tabs p-3  justify-content-between align-items-center">
+                        <h4 class="strong form-inline    m-0  ">Listings</h4>
+                        <a href="#">See all</a>
+                    </div>
+                    <div class="pt-3 px-3 nav-tabs">
+
+                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                        <figcaption class="blockquote-footer">collabs</figcaption>
+
+                    </div>
+                    <div class="pt-3 px-3 nav-tabs">
+
+                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                        <figcaption class="blockquote-footer">collabs</figcaption>
+
+                    </div>
+                    <div class="pt-3 px-3 nav-tabs">
+
+                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                        <figcaption class="blockquote-footer">collabs</figcaption>
+
+                    </div>
+                    <div class="pt-3 px-3 nav-tabs">
+
+                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                        <figcaption class="blockquote-footer">collabs</figcaption>
+
+                    </div>
+                    <div class="pt-3 px-3 nav-tabs">
+
+                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                        <figcaption class="blockquote-footer">collabs</figcaption>
+
+                    </div>
+
+                </section>
+
+            </aside>
+
+
+
+        </section>
+
+
+    </section>
+
+    <footer class="container-fluid mt-5" style="background-color:#e5e5e5">
+        <div class="container row mx-5 mx-auto p-5 text-center">
+            <p><a href="#">DEV Community</a> — A constructive and inclusive social network for software developers. With
+                you every step of your journey.</p>
+            <p>Built on <a href="#">Forem</a> — the <a href="#">open source</a> software that powers <a href="#">DEV</a>
+                and other inclusive communities.<br>
+                Made with love and <a href="#">Ruby on Rails</a>. DEV Community © 2016 - 2022.
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
