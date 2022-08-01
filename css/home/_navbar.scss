@@ -75,3 +75,47 @@ header.fixed-top + main {
      font-size: 12px;
      font-weight: 700;
 }
+
+.form-search{
+    width: 420px;
+}
+.wrapper-search{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .btn{
+        &:hover{
+            border: none;
+            background-color: rgba(59,73,223,0.1);
+            color: rgb(38,38,38);
+
+            svg{
+                fill: rgba(59,73,223,0.8);;
+            }
+        }
+
+        &:active{
+            border: none;
+
+            
+        }
+
+        &:focus{
+            border: none;
+        }
+        &:focus-visible{
+            border: none;
+        }
+
+        
+    }
+}
+
+.navbar-toggler{
+    border: none;
+
+    &:focus{
+        box-shadow: none;
+    }
+}
