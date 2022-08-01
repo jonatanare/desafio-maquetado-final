@@ -11,245 +11,316 @@
     <title>Desafio Final Maquetado</title>
 </head>
 
-<body style="background-color:whitesmoke;">
-
-    <header class="container">
-        <!-- NAV PENDIENTE -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-
-            <section role="navigation " class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">DEV Community</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<body>
+    <header class="navbar-light fixed-top header-static bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img style="height:calc( 50px - .3125rem * 2)"
+                        src="/assets/logos/logo-devto.png"></img></a>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav mb-4">
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-home.svg"
-                                        alt="Icon"></span>Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-reading.svg" alt="Icon"></span>Reading List</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-letter.svg" alt="Icon"></span>Listings</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-podcasts.svg" alt="Icon"></span>Podcasts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-video.svg"
-                                        alt="Icon"></span>Videos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-tags.svg"
-                                        alt="Icon"></span>Tags</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-faq.svg"
-                                        alt="Icon"></span>FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-forem-shop.svg" alt="Icon"></span>Forem Shop</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-sponsors.svg" alt="Icon"></span>Sponsors</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-about.svg"
-                                        alt="Icon"></span>About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-contact.svg" alt="Icon"></span>Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img class="img-fluid"
-                                        src="./assets/icons/icon-guies.svg" alt="Icon"></span>Guides</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-software-comparisons.svg" alt="Icon"></span>Software
-                                comparisons</a></li>
-                    </ul>
-                    <h2 class="other-title">Other</h2>
-                    <ul class="navbar-nav">
-                        <li class="nav-items">
-                            <a class="nav-link" href="#">
-                                <span>
-                                    <img src="./assets/icons/icon-code-conduct.svg" alt="Icon code conduct">
-                                </span>
-                                Code of Conduct
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" href="#">
-                                <span>
-                                    <img src="./assets/icons/icon-privacy-policy.svg" alt="Icon code privacy policy">
-                                </span>
-                                Privacy Policy
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" href="#">
-                                <span>
-                                    <img src="./assets/icons/icon-terms-use.svg" alt="Icon term use">
-                                </span>
-                                Terms of use
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav d-flex flex-row justify-content-between">
-                        <li class="nav-items">
-                            <a class="nav-link mx-1" href="#">
-                                <img src="./assets/icons/icon-twitter.svg" alt="Icon twitter">
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link mx-1" href="#">
-                                <img src="./assets/icons/icon-facebook.svg" alt="Icon facebook">
-                            </a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link mx-1" href="#">
-                                <img src="./assets/icons/icon-github.svg" alt="Icon github">
-                            </a>
-                        </li>      
-                        <li class="nav-items">
-                            <a class="nav-link mx-1" href="#">
-                                <img src="./assets/icons/icon-instagram.svg" alt="Icon instagram">
-                            </a>
-                        </li>   
-                        <li class="nav-items">
-                            <a class="nav-link mx-1" href="#">
-                                <img src="./assets/icons/icon-twitch.svg" alt="Icon twitch">
-                            </a>
-                        </li>           
-                    </ul>
-                </div>
-            </section>
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <input class="form-control mr-sm-2 w-auto" type="search" placeholder="Search" aria-label="Search">
+                </form>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img style="height:calc( 50px - .3125rem * 2)" src="/assets/logos/logo-devto.png"></img>
-            </a>
-            <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-                <input class="form-control mr-sm-2 w-auto" type="search" placeholder="Search" aria-label="Search">
-            </form>
-
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerEasybank">
-                <div class="d-none d-md-flex ">
-                    <button class="btn btn-outline-primary m-auto">Create Post</button>
-                    <button class="btn btn-light btn-md">
-                        <img src="./assets/icons//icon-notifications.svg" alt="Icon notification">
+                <div class="d-flex items-center h-100 ml-auto">
+                    <button class="btn bg-transparent btn-sm d-md-none">
+                        <img src="./assets/icons/icon-search.svg" alt="Icon reach">
                     </button>
-                    <button class="btn rounded-pill btn-avatar">
-                        <img class="rounded-pill img-avatar" src="./assets/home/avatar-home.webp" alt="Avatar Session">
+                    <button class="btn btn-outline-primary m-auto d-none d-md-flex">Create Post</button>
+                    <button class="btn bg-transparent btn-sm position-relative ">
+                        <img src="./assets/icons/icon-notifications.svg" alt="Icon notification">
+                        <span class="position-absolute translate-middle badge bg-danger">
+                            9
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                    </button>
+                    <button class="btn btn-sm p-1 wrapper-avatar c-btn">
+                        <span class="btn-avatar">
+                            <img class="img-avatar" src="./assets/home/avatar-home.webp" alt="Avatar Session">
+                        </span>
                     </button>
                 </div>
+
+
+
+                <section role="navigation " class="offcanvas offcanvas-start d-lg-none" tabindex="-1"
+                    id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">DEV Community</h5>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mb-4">
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-home.svg" alt="Icon"></span>Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-reading.svg" alt="Icon"></span>Reading List</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-letter.svg" alt="Icon"></span>Listings</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-podcasts.svg" alt="Icon"></span>Podcasts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-video.svg" alt="Icon"></span>Videos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-tags.svg" alt="Icon"></span>Tags</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-faq.svg" alt="Icon"></span>FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-forem-shop.svg" alt="Icon"></span>Forem Shop</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-sponsors.svg" alt="Icon"></span>Sponsors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-about.svg" alt="Icon"></span>About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-contact.svg" alt="Icon"></span>Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img class="img-fluid"
+                                            src="./assets/icons/icon-guies.svg" alt="Icon"></span>Guides</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-software-comparisons.svg"
+                                            alt="Icon"></span>Software
+                                    comparisons</a></li>
+                        </ul>
+                        <h2 class="other-title">Other</h2>
+                        <ul class="navbar-nav">
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-code-conduct.svg" alt="Icon code conduct">
+                                    </span>
+                                    Code of Conduct
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-privacy-policy.svg"
+                                            alt="Icon code privacy policy">
+                                    </span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-terms-use.svg" alt="Icon term use">
+                                    </span>
+                                    Terms of use
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-flex flex-row justify-content-between">
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-twitter.svg" alt="Icon twitter">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-facebook.svg" alt="Icon facebook">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-github.svg" alt="Icon github">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-instagram.svg" alt="Icon instagram">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-twitch.svg" alt="Icon twitch">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-
         </nav>
     </header>
 
-    <section class="container-fluid">
-        <section class="container row mx-5 mx-auto">
-            <aside class="d-none d-md-block col-md-3 p-0">
-                <div class="sidebar-container "></div>
-                <section class="menu">
-                    <div class="card p-3">
-                        <h3 class="text-primary">DEV Community</h3>
-                        <h3 class=""> is a community of 883,369 amazing developers</h3>
-                        <p class="light">We're a place where coders share, stay up-to-date and grow their careers.</p>
-                        <button class="btn btn-outline-primary mt-3 ">Create acount</button>
-                        <button class="btn bg-white mb-3">Log in</button>
 
-                    </div>
-                    <div class="card p-3">
-                        <div class="list-group">
-                            <a class="list-group-item" style="border:0;" href="#"><img src="/assets/icons/icon-home.svg"
-                                    alt="">Home</a>
-                            <a class="list-group-item" style="border:0;" href="#"><img
-                                    src="/assets/icons/icon-video.svg" alt="">Listings</a>
-                            <a class="list-group-item" style="border:0;" href="#"><img
-                                    src="/assets/icons/icon-video.svg" alt="">Podcats</a>
-                        </div>
-
-                    </div>
-
-                    <!-- <a class="d-block" href="#"><img src="/assets/icons/icon-home.svg" alt="">Home</a>
-                        <a class="d-block" href="#"><img src="/assets/icons/icon-video.svg" alt="">Listings</a>
-                        <a class="d-block" href="#"><img src="/assets/icons/icon-video.svg" alt="">Podcats</a> -->
-
-                </section>
-            </aside>
-            </aside>
-            <main class="col-12 col-md-9 col-lg-6">
-                <p class="fw-bold d-inline m-3">Relevant</p>
-                <p class="d-inline m-3">Latest</p>
-                <p class="d-inline m-3">Top</p>
-                <article class="container card">
-                    <article class="row col-12 my-3">
-                        <article class="col-12 mask">
-                            <img class="img-fluid" src="/assets/home/last-post-home.webp" alt="img del artículo">
-                            <p>Sonny Li</p>
-                            <h2>8-bit Learn to Code Platform! </h2>
-                            <p> #news #beginners tutorial #python</p>
-                            <p>37 reactions 8 comments</p>
+    <main>
+        <section class="container">
+            <div class="row">
+                <aside class="d-none d-md-block col-md-3 p-0">
+                    <div class="sidebar-container "></div>
+                    <section class="menu">
+                        <ul class="navbar-nav mb-4">
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-home.svg"
+                                            alt="Icon"></span>Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-reading.svg" alt="Icon"></span>Reading List</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-letter.svg" alt="Icon"></span>Listings</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-podcasts.svg" alt="Icon"></span>Podcasts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-video.svg"
+                                            alt="Icon"></span>Videos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-tags.svg"
+                                            alt="Icon"></span>Tags</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-faq.svg"
+                                            alt="Icon"></span>FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-forem-shop.svg" alt="Icon"></span>Forem Shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-sponsors.svg" alt="Icon"></span>Sponsors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-about.svg"
+                                            alt="Icon"></span>About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-contact.svg" alt="Icon"></span>Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img class="img-fluid"
+                                            src="./assets/icons/icon-guies.svg" alt="Icon"></span>Guides</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-software-comparisons.svg" alt="Icon"></span>Software
+                                    comparisons</a></li>
+                        </ul>
+                        <h2 class="other-title">Other</h2>
+                        <ul class="navbar-nav">
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-code-conduct.svg" alt="Icon code conduct">
+                                    </span>
+                                    Code of Conduct
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-privacy-policy.svg" alt="Icon code privacy policy">
+                                    </span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-terms-use.svg" alt="Icon term use">
+                                    </span>
+                                    Terms of use
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-flex flex-row justify-content-between">
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-twitter.svg" alt="Icon twitter">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-facebook.svg" alt="Icon facebook">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-github.svg" alt="Icon github">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-instagram.svg" alt="Icon instagram">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-twitch.svg" alt="Icon twitch">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+                </aside>
+                <div class="col-12 col-md-9 col-lg-6">
+                    <p class="fw-bold d-inline m-3">Relevant</p>
+                    <p class="d-inline m-3">Latest</p>
+                    <p class="d-inline m-3">Top</p>
+                    <article class="container card">
+                        <article class="row col-12 my-3">
+                            <article class="col-12 mask">
+                                <img class="img-fluid" src="/assets/home/last-post-home.webp" alt="img del artículo">
+                                <p>Sonny Li</p>
+                                <h2>8-bit Learn to Code Platform! </h2>
+                                <p> #news #beginners tutorial #python</p>
+                                <p>37 reactions 8 comments</p>
+                            </article>
                         </article>
                     </article>
-                </article>
-                <article class="container card my-2">
-                    <article class="row col-12 my-3">
-                        <article class="col-12 mask">
-                            <p>Keff</p>
-                            <h2>How do you estimate/calculate costs of new features for clients? </h2>
-                            <p> #help
-                                #career
-                                #managementn</p>
-                            <p class="overlay">37 reactions 8 comments</p>
+                    <article class="container card my-2">
+                        <article class="row col-12 my-3">
+                            <article class="col-12 mask">
+                                <p>Keff</p>
+                                <h2>How do you estimate/calculate costs of new features for clients? </h2>
+                                <p> #help
+                                    #career
+                                    #managementn</p>
+                                <p class="overlay">37 reactions 8 comments</p>
+                            </article>
                         </article>
                     </article>
-                </article>
-            </main>
-            <aside class="d-none d-lg-block col-lg-3 p-0">
-
-                <div class="card p-3 ">
-                    <img class="my-3" src="/assets/home/publicidad_ejemplo.jfif" alt="">
-                    <h3 class="text-primary strong">Forem for android is here!</h3>
                 </div>
-                <section class="card mt-3">
-
-                    <div class="d-flex nav-tabs p-3  justify-content-between align-items-center">
-                        <h4 class="strong form-inline    m-0  ">Listings</h4>
-                        <a href="#">See all</a>
+                <aside class="d-none d-lg-block col-lg-3 p-0">
+    
+                    <div class="card p-3 ">
+                        <img class="my-3" src="/assets/home/publicidad_ejemplo.jfif" alt="">
+                        <h3 class="text-primary strong">Forem for android is here!</h3>
                     </div>
-                    <div class="pt-3 px-3 nav-tabs">
-
-                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
-                        <figcaption class="blockquote-footer">collabs</figcaption>
-
-                    </div>
-                    <div class="pt-3 px-3 nav-tabs">
-
-                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
-                        <figcaption class="blockquote-footer">collabs</figcaption>
-
-                    </div>
-                    <div class="pt-3 px-3 nav-tabs">
-
-                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
-                        <figcaption class="blockquote-footer">collabs</figcaption>
-
-                    </div>
-                    <div class="pt-3 px-3 nav-tabs">
-
-                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
-                        <figcaption class="blockquote-footer">collabs</figcaption>
-
-                    </div>
-                    <div class="pt-3 px-3 nav-tabs">
-
-                        <p>🆘 Help Needed for Low-code Framework for Node.js</p>
-                        <figcaption class="blockquote-footer">collabs</figcaption>
-
-                    </div>
-
-                </section>
-
-            </aside>
-
-
-
+                    <section class="card mt-3">
+    
+                        <div class="d-flex nav-tabs p-3  justify-content-between align-items-center">
+                            <h4 class="strong form-inline    m-0  ">Listings</h4>
+                            <a href="#">See all</a>
+                        </div>
+                        <div class="pt-3 px-3 nav-tabs">
+    
+                            <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                            <figcaption class="blockquote-footer">collabs</figcaption>
+    
+                        </div>
+                        <div class="pt-3 px-3 nav-tabs">
+    
+                            <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                            <figcaption class="blockquote-footer">collabs</figcaption>
+    
+                        </div>
+                        <div class="pt-3 px-3 nav-tabs">
+    
+                            <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                            <figcaption class="blockquote-footer">collabs</figcaption>
+    
+                        </div>
+                        <div class="pt-3 px-3 nav-tabs">
+    
+                            <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                            <figcaption class="blockquote-footer">collabs</figcaption>
+    
+                        </div>
+                        <div class="pt-3 px-3 nav-tabs">
+    
+                            <p>🆘 Help Needed for Low-code Framework for Node.js</p>
+                            <figcaption class="blockquote-footer">collabs</figcaption>
+    
+                        </div>
+    
+                    </section>
+    
+                </aside>
+            </div>
         </section>
 
 
-    </section>
+    </main>
 
     <footer class="container-fluid mt-5" style="background-color:#e5e5e5">
         <div class="container row mx-5 mx-auto p-5 text-center">
