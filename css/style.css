@@ -24,11 +24,6 @@
   margin-right: 4px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .aside__publicity {
   font-weight: 900;
   font-weight: 900;
@@ -76,11 +71,6 @@
 }
 .listing__nobg:hover p {
   color: rgb(47, 58, 178);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
 }
 
 body {
