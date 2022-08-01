@@ -154,12 +154,57 @@
         <div class="container">
             <div class="row">
                 <!-- Sidenav START -->
-                <div class="col-lg-1">
-
+                <div class="col-md-1 d-none d-md-flex justify-content-center post-aside-left">
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-icons nav-icons--like ">
+                                <span class="wrapper-icon text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" class="crayons-icon">
+                                        <path d="M21.179 12.794l.013.014L12 22l-9.192-9.192.013-.014A6.5 6.5 0 0112 3.64a6.5 6.5 0 019.179 9.154zM4.575 5.383a4.5 4.5 0 000 6.364L12 19.172l7.425-7.425a4.5 4.5 0 10-6.364-6.364L8.818 9.626 7.404 8.21l3.162-3.162a4.5 4.5 0 00-5.99.334l-.001.001z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <span class="wrapper-icon--count">
+                                38
+                            </span>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href="#" class="nav-link nav-icons nav-icons--unicorn">
+                                <span class="wrapper-icon text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-hidden="true" class="crayons-icon">
+                                        <path d="M5.645 8.013c.013-.265-.261-.323-.4-.183-1.16 1.17-1.822 3.865-.344 7.32.294.961 1.938 3.19.84 6.131l-.003.006c-.094.255.206.404.366.263 1.395-1.226 1.933-3.593 1.1-6.375-.488-1.657-1.955-4.226-1.559-7.162zm-3.22 2.738c.05-.137-.124-.417-.326-.225-.939.893-1.316 2.863-.976 4.605.547 2.878 2.374 3.526 2.066 6.629-.028.102.176.38.348.154 1.546-2.033.409-4.453-.241-6.006-1.005-2.386-1.087-4.118-.871-5.157z" fill="#08090A"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.622 7.223l8.579-3.68c.598-.256 1.087.547.6.985l-6.618 5.941c.881 2.043 2.738 6.34 2.931 6.775 1.348 3.031-2.055 4.918-3.807 3.583a7.027 7.027 0 01-.623-.574c-.974-.965-2.419-2.398-5.207-1.877.284-2.115-.313-3.737-.883-5.288-.38-1.032-.747-2.032-.837-3.124-.346-3.329 3.763-8.23 4.696-7.953.386.115.326 1.229.266 2.319-.051.948-.102 1.88.143 2.12.145.142.428.43.76.773zM11.5 16.5l2.5.5 2.5 2 1-.5-2-4.5-1.5-4-1.5-1-1-1-1-1.5L10 8l-.5 1.5 1 2.5 1 4.5z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <span class="wrapper-icon--count">
+                                18
+                            </span>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href="#" class="nav-link nav-icons nav-icons--save">
+                                <span class="wrapper-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" class="crayons-icon">
+                                        <path d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <span class="wrapper-icon--count">
+                                58
+                            </span>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href="#" class="nav-link nav-icons">
+                                <span class="wrapper-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="acr3clv7ru8wbkl85evfxgom6hiefhiz" aria-hidden="true" class="crayons-icon dropdown-icon"><title id="acr3clv7ru8wbkl85evfxgom6hiefhiz">More...</title><path fill-rule="evenodd" clip-rule="evenodd" d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <!-- Sidenav END -->
                 <!-- Main content START -->
-                <div class="col-lg-8">
+                <div class="col-md-11 col-lg-8">
                     <article class="post card mb-2">
                         <div>
                             <img class="w-100 m-0" src="/assets/post/last-post-post.webp" alt="">
@@ -197,263 +242,168 @@
                         </div>
                     </article>
 
-                    <article class="card">
-                        <div>
-                            
+                    <article class="card px-5 py-5">
+                        <div class="d-flex justify-content-between mb-4">
+                            <h5>Discussion (12)</h5>
+                            <button class="btn border"> Subscribe</button>
+                        </div>
+                        <div class="d-flex justify-content-start mb-0 pb-4 pt-1">
+                            <img class="post__logo rounded-circle me-2" src="/assets/post/devlogo-pwa-512.webp" alt="">
+                            <input class="post__input" type="comment" id="comment" name="comment" placeholder="Add to the discussion">
                         </div>
 
-                    </article>
-
-
-
-
-                    <article class="article card mb-2">
-                        <div class="px-4 pt-3 pe-1">
-                            <div class="d-flex ">
-                                <div class="d-flex align-items-center me-0">
-                                    <img class="article__autor rounded-circle" src="/assets/home/autor2.webp" alt="">
-                                </div>
-                                <div class="ms-2 ">
-                                    <p class="btn article__down name mb-0 p-1">Dennis Persson</p>
-                                    <label class="date d-block ms-1">Jul 31</label>
+                        <div class="d-flex">  
+                            <div class="me-2">
+                                <img class="post__logo rounded-circle" src="/assets/post/autor1.webp" alt="">
+                                <div class="d-flex justify-content-center py-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="akmdkl3pxz7537xb8ma3j97jz207c2tr" class="crayons-icon expanded"><title id="akmdkl3pxz7537xb8ma3j97jz207c2tr">Collapse</title>
+                                    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="identation p-3 ms-3 pt-2">
-                                <a class="article__link" href="#">
-                                    <h2 class="article__title">List of Free Image Tools Every Frontend Developer Needs
-                                    </h2>
-                                </a>
-                                <div class="article d-flex mt-">
-                                    <a class="btn article__btn article__btn--webdev">
-                                        <span>#</span>webdev
-                                    </a>
-                                    <a class="btn article__btn article__btn--ux">
-                                        <span>#</span>ux
-                                    </a>
-                                    <a class="btn article__btn article__btn--css">
-                                        <span>#</span>css
-                                    </a>
-                                    <a class="btn article__btn article__btn--productivity">
-                                        <span>#</span>productivity
-                                    </a>
-                                </div>
-                                <div class="py-2 pb-0 d-flex justify-content-between">
-                                    <div>
-                                        <a class="btn article__down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
-                                                aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon">
-                                                <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
-                                                <path
-                                                    d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
-                                                </path>
-                                            </svg>
-                                            2 reactions
-                                        </a>
-                                        <a class="btn article__down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
-                                                aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
-                                                <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
-                                                <path
-                                                    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
-                                                </path>
-                                            </svg>
-                                            Add Comment
-                                        </a>
+                            <div><div class="card w-100">
+                                <div class="px-2 py-3 d-flex align-items-start justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <p class="btn article__down name mb-0 p-1">Dennis Persson</p>
+                                        <label class="date d-block ms-1 mt-0">
+                                            • Aug 1
+                                        </label>
                                     </div>
-                                    <div>
-                                        <span>6 min read</span>
-                                        <a class="btn article__btn article__btn--save m-1">Save</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article card mb-2">
-                        <div class="px-4 pt-3 pe-1">
-                            <div class="d-flex ">
-                                <div class="d-flex align-items-center me-0">
-                                    <img class="article__autor rounded-circle" src="/assets/home/autor3.webp"" alt="">
-                                    </div>
-                                    <div class=" ms-2 "> 
-                                        <p class=" btn article__down name mb-0 p-1">Daniel</p>
-                                    <label class="date d-block ms-1">Jul 31</label>
-                                </div>
-                            </div>
-                            <div class="identation p-3 ms-3 pt-2">
-                                <a class="article__link" href="#">
-                                    <h2 class="article__title">The Importance of Clean Code in Your Startup's Success
-                                    </h2>
-                                </a>
-                                <div class="article d-flex ">
-                                    <a class="btn article__btn article__btn--beginners">
-                                        <span>#</span>begginers
-                                    </a>
-                                    <a class="btn article__btn article__btn--productivity">
-                                        <span>#</span>productivity
-                                    </a>
-                                    <a class="btn article__btn article__btn--computerscience">
-                                        <span>#</span>computerscience
-                                    </a>
-                                    <a class="btn article__btn article__btn--programming">
-                                        <span>#</span>programming
-                                    </a>
-                                </div>
-                                <div class="py-2 pb-0 d-flex justify-content-between">
-                                    <div>
-                                        <a class="btn article__down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
-                                                aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon">
-                                                <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
-                                                <path
-                                                    d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
-                                                </path>
-                                            </svg>
-                                            2 reactions
-                                        </a>
-                                        <a class="btn article__down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
-                                                aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
-                                                <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
-                                                <path
-                                                    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
-                                                </path>
-                                            </svg>
-                                            Add Comment
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <span>6 min read</span>
-                                        <a class="btn article__btn article__btn--save m-1">Save</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="article card mb-2">
-                        <div class="px-4 pt-3 pe-1">
-                            <div class="d-flex ">
-                                <div class="d-flex align-items-center me-0">
-                                    <img class="article__autor rounded-circle" src="/assets/home/autor4.webp" alt="">
-                                </div>
-                                <div class="ms-2 ">
-                                    <p class="btn article__down name mb-0 p-1">Dennis Persson</p>
-                                    <label class="date d-block ms-1">Jul 31</label>
-                                </div>
-                            </div>
-                            <div class="identation p-3 ms-3 pt-2">
-                                <a class="article__link" href="#">
-                                    <h2 class="article__title">List of Free Image Tools Every Frontend Developer Needs
-                                    </h2>
-                                    <div class="article d-flex ">
-                                        <a class="btn article__btn article__btn--webdev">
-                                            <span>#</span>webdev
-                                        </a>
-                                        <a class="btn article__btn article__btn--ux">
-                                            <span>#</span>ux
-                                        </a>
-                                        <a class="btn article__btn article__btn--css">
-                                            <span>#</span>css
-                                        </a>
-                                        <a class="btn article__btn article__btn--productivity>
-                                                <span>#</span>productivity
+                                    <p class="btn article__down name mb-0 p-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aclrodxc7aylor6jj9i8qj8kt8fylt1m" class="crayons-icon pointer-events-none"><title id="aclrodxc7aylor6jj9i8qj8kt8fylt1m">Dropdown menu</title>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+                                        </svg>
+                                    </p>
+                                </div><div class="px-2 pb-3"><img class="w-100" style="border-radius:10px" src="/assets/post/meme1.jpg" alt=""></div>
+                            </div><div>
+                                            <a class="btn article__down">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon">
+                                                    <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
+                                                    <path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                                    </path>
+                                                </svg>
+                                                11 likes
                                             </a>
-                                        </div>
-                               
-                                    <div class=" py-2 pb-0 d-flex justify-content-between">
-                                            <div>
-                                                <a class="btn article__down">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        role="img" aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70"
-                                                        class="crayons-icon">
-                                                        <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
-                                                        <path
-                                                            d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
-                                                        </path>
-                                                    </svg>
-                                                    7 reactions
-                                                </a>
-                                                <a class="btn article__down">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        role="img" aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz"
-                                                        class="crayons-icon">
-                                                        <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
-                                                        <path
-                                                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
-                                                        </path>
-                                                    </svg>
-                                                    12 comments
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <span>2 min read</span>
-                                                <a class="btn article__btn article__btn--save m-1">Save</a>
-
-                                            </div>
-                                    </div>
+                                            <a class="btn article__down">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
+                                                    <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
+                                                    <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                                    </path>
+                                                </svg>
+                                                Reply
+                                            </a>
+                                        </div></div>
                             </div>
-                        </div>
+
+
                     </article>
-                    <article class="article card mb-2">
-                        <div class="px-4 pt-3 pe-1">
-                            <div class="d-flex ">
-                                <div class="d-flex align-items-center me-0">
-                                    <img class="article__autor rounded-circle" src="/assets/home/autor5.webp" alt="">
-                                </div>
-                                <div class="ms-2 ">
-                                    <p class="btn article__down name mb-0 p-1">Thomas Hansen</p>
-                                    <label class="date d-block ms-1">Jul 31</label>
+
+                    <article class="card px-5 py-5">
+
+                        <div class="d-flex">  
+                            <div class="me-2">
+                                <img class="post__logo rounded-circle" src="/assets/post/autor2.webp" alt="">
+                                <div class="d-flex justify-content-center py-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="akmdkl3pxz7537xb8ma3j97jz207c2tr" class="crayons-icon expanded"><title id="akmdkl3pxz7537xb8ma3j97jz207c2tr">Collapse</title>
+                                    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="identation p-3 ms-3 pt-2">
-                                <a class="article__link" href="#">
-                                    <h2 class="article__title">Unit testing frontend code is (probably) useless</h2>
-                                </a>
-                                <div class="article d-flex ">
-                                    <a class="btn article__btn article__btn--discuss">
-                                        <span>#</span>discuss
-                                    </a>
-
-                                </div>
-                                <div class="py-2 pb-0 d-flex justify-content-between">
-                                    <div>
-                                        <a class="btn article__down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
-                                                aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon">
-                                                <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
-                                                <path
-                                                    d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
-                                                </path>
-                                            </svg>
-                                            7 reactions
-                                        </a>
-                                        <a class="btn article__down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
-                                                aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
-                                                <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
-                                                <path
-                                                    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
-                                                </path>
-                                            </svg>
-                                            12 comments
-                                        </a>
+                            <div><div class="card w-100">
+                                <div class="px-2 py-3 d-flex align-items-start justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <p class="btn article__down name mb-0 p-1">
+                                            Diner Das
+                                        </p>
+                                        <label class="date d-block ms-1 mt-0">
+                                            • Aug 1
+                                        </label>
                                     </div>
-                                    <div>
-                                        <span>2 min read</span>
-                                        <a class="btn article__btn article__btn--save m-1">Save</a>
-
-                                    </div>
-                                </div>
+                                    <p class="btn article__down name mb-0 p-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aclrodxc7aylor6jj9i8qj8kt8fylt1m" class="crayons-icon pointer-events-none"><title id="aclrodxc7aylor6jj9i8qj8kt8fylt1m">Dropdown menu</title>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+                                        </svg>
+                                    </p>
+                                </div><div class="px-2 pb-3"><img class="w-100" style="border-radius:10px" src="/assets/post/meme2.jpg" alt=""></div>
+                            </div><div>
+                                            <a class="btn article__down">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon">
+                                                    <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
+                                                    <path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                                    </path>
+                                                </svg>
+                                                8 likes
+                                            </a>
+                                            <a class="btn article__down">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
+                                                    <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
+                                                    <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                                    </path>
+                                                </svg>
+                                                Reply
+                                            </a>
+                                        </div></div>
                             </div>
-                        </div>
+
+
                     </article>
+
+                    <article class="card px-5 py-5">
+
+                        <div class="d-flex">  
+                            <div class="me-2">
+                                <img class="post__logo rounded-circle" src="/assets/post/autor3.webp" alt="">
+                                <div class="d-flex justify-content-center py-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="akmdkl3pxz7537xb8ma3j97jz207c2tr" class="crayons-icon expanded"><title id="akmdkl3pxz7537xb8ma3j97jz207c2tr">Collapse</title>
+                                    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div><div class="card w-100">
+                                <div class="px-2 py-3 d-flex align-items-start justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <p class="btn article__down name mb-0 p-1">                                     
+                                            Andres Becker
+                                        </p>
+                                        <label class="date d-block ms-1 mt-0">
+                                            • Aug 1
+                                        </label>
+                                    </div>
+                                    <p class="btn article__down name mb-0 p-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aclrodxc7aylor6jj9i8qj8kt8fylt1m" class="crayons-icon pointer-events-none"><title id="aclrodxc7aylor6jj9i8qj8kt8fylt1m">Dropdown menu</title>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+                                        </svg>
+                                    </p>
+                                </div><div class="px-2 pb-3"><img class="w-100" style="border-radius:10px" src="/assets/post/meme3.jpg" alt=""></div>
+                            </div><div>
+                                            <a class="btn article__down">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon">
+                                                    <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
+                                                    <path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                                    </path>
+                                                </svg>
+                                                5 likes
+                                            </a>
+                                            <a class="btn article__down">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
+                                                    <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
+                                                    <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                                    </path>
+                                                </svg>
+                                                Reply
+                                            </a>
+                                        </div></div>
+                            </div>
+
+
+                    </article>
+
+
 
                 </div>
                 <!-- Main content END -->
                 <!-- Right sidebar START -->
-                <aside class="aside aside col-12 col-lg-3 p-0">
+                <aside class="aside d-none d-lg-block col-lg-3 p-0">
                     <div class="card__hover card">
                         <div class="d-flex card__hover--containerimage">
                             <div class="d-flex align-items-center me-0">

@@ -30,6 +30,20 @@
     width: 40px;
     height: 40px;
   }
+
+  &__logo{
+    width: 32px;
+    height: 32px;
+  }
+  &__input{
+    width: 100%;
+    height: 64px;
+    padding: 5px;
+    border-radius:5px;  
+    border: 1px solid gray;
+
+    
+  }
   &__btn {
     font-size: 16px;
     &--programming {
