@@ -2,7 +2,6 @@
   .aside{
    
     &__publicity{
-        background-color:rgba(250, 250, 250);
         font-weight: 900;
         &--title{
             color:rgb(59, 73, 223)};
@@ -22,14 +21,6 @@
             }
           }
           
-        }
-        h4{
-            &:hover {
-                background:none !important; 
-                color:rgba(47, 58, 178, 1);
-                cursor:pointer;
-              }
-
         }
     
         &__title{
