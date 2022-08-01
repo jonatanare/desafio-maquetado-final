@@ -118,6 +118,12 @@ header.fixed-top + main {
 .asideleft__title--blue {
   color: rgb(59, 73, 223);
 }
+.asideleft__letter {
+  font-size: 16px;
+}
+.asideleft__letter--bold {
+  font-weight: 700;
+}
 
 .ul-rounded h5 {
   font-size: 1rem;
@@ -130,6 +136,10 @@ header.fixed-top + main {
 .ul-rounded li a {
   border-radius: 5px;
   padding-left: 15px;
+}
+
+.img {
+  border-radius: inherit;
 }
 
 .aside__publicity {
