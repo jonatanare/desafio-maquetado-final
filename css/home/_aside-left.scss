@@ -1,0 +1,44 @@
+
+
+.asideleft{
+    &__card{
+        width: 100%;
+        height: auto;
+    }
+    &__title{
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0;
+        
+        &--blue{
+        color:rgb(59, 73, 223,1);
+        }
+    }
+    &__letter{
+        font-size: 16px;
+        &--bold{
+            font-weight: 700;
+        }
+    }
+
+   
+}
+
+.ul-rounded {
+    h5 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    ul {
+        max-height: 42vh;
+        overflow-y: auto;
+    }
+    li a{
+        border-radius: 5px;
+        padding-left: 15px;
+    }
+}
+
+.img{
+    border-radius: inherit;
+}

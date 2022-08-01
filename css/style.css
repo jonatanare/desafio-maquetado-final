@@ -108,6 +108,42 @@ header.fixed-top + main {
   box-shadow: none;
 }
 
+.asideleft__card {
+  width: 100%;
+  height: auto;
+}
+.asideleft__title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.asideleft__title--blue {
+  color: rgb(59, 73, 223);
+}
+.asideleft__letter {
+  font-size: 16px;
+}
+.asideleft__letter--bold {
+  font-weight: 700;
+}
+
+.ul-rounded h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.ul-rounded ul {
+  max-height: 42vh;
+  overflow-y: auto;
+}
+.ul-rounded li a {
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.img {
+  border-radius: inherit;
+}
+
 .aside__publicity {
   background-color: rgb(250, 250, 250);
   font-weight: 900;
@@ -163,8 +199,14 @@ header.fixed-top + main {
   color: rgb(47, 58, 178);
 }
 
+.row > * {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 body {
   font-family: -apple-system, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f5f5f5;
 }
 
 .menu-main .current {
