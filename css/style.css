@@ -427,4 +427,8 @@ label.date {
 header.fixed-top + main {
   padding-top: calc(1.5rem + 56px);
   margin-bottom: 1.5rem;
+}
+
+.card-aside {
+  border-radius: 1rem;
 }/*# sourceMappingURL=style.css.map */
