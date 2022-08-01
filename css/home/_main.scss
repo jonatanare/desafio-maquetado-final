@@ -174,6 +174,42 @@ label.date {
         color: #326de6;
       }
     }
+    &--webdev {
+      &:hover {
+        background-color: rgba(86, 39, 101, 0.10);
+        border-color:#562765;
+      }
+      span {
+        color: #562765;
+      }
+    }
+    &--flutter {
+      &:hover {
+        background-color: rgba(86, 197, 246, 0.10);
+        border-color:#56C5F6;
+      }
+      span {
+        color: #56C5F6;
+      }
+    }
+    &--android {
+      &:hover {
+        background-color: rgba(86, 160, 54, 0.10);
+        border-color:#56a036;
+      }
+      span {
+        color: #56a036;
+      }
+    }
+    &--programming {
+      &:hover {
+        background-color: rgba(137, 6, 6, 0.10);
+        border-color:#890606;
+      }
+      span {
+        color: #890606;
+      }
+    }
       
   }
   &__down {
@@ -191,4 +227,43 @@ label.date {
     padding-left: 0px !important;
     margin-left: 0px !important;
   }
+}
+
+.card__hover{
+  display: none;
+  color:rgb(82,82,82,1);
+  border-top: 2rem solid black;
+  position: absolute ;
+  top:50%;
+  left: 50%;
+  width: max-content;
+  max-width: 360px;
+  height: auto;
+  min-height: 300px;
+  padding: 20px;
+  &--img{
+    border-radius: 100%;
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  &--title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  &--containerimage{
+    margin-top: -35px;
+  }
+  &--key{
+    font-weight: 700;
+  }
+  &--value{
+    margin-bottom: 8px;
+  }
+  li{
+    display: grid;
+  }
+
 }
