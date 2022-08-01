@@ -270,10 +270,6 @@ label.date {
     margin-left: 0px !important;
   }
 }
-header.fixed-top + main {
-  padding-top: calc(1.5rem + 56px);
-  margin-bottom: 1.5rem;
-}
 .card__hover {
   display: none;
   color: rgb(82, 82, 82);
@@ -312,4 +308,9 @@ header.fixed-top + main {
 }
 .card__hover li {
   display: grid;
+}
+
+header.fixed-top + main {
+  padding-top: calc(1.5rem + 56px);
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
