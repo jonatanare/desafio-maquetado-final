@@ -161,7 +161,17 @@
             <!-- Start Row -->
             <div class="row g-4">
                 <!-- Start Aside Left -->
-                <aside class="d-none d-md-block col-md-3">
+                <aside class="asideleft d-none d-md-block col-md-3">
+                    <div class="card p-3 asideleft__card">
+                        <h3 class="asideleft__title"><a class="text-primary text-decoration-none" href="#">DEV Community</a> is a community of 883,369 amazing developers</h3>
+                        <p class="light asideleft__text pt-3">We're a place where coders share, stay up-to-date and grow their careers.</p>
+                        <button class="mt-2 btn btn-outline-primary asideleft__btn">Create acount</button>
+                        <button class="btn bg-white mt-2">Log in</button>
+                       
+                    </div>
+                    
+                    
+                </section>   
                     <ul class="navbar-nav mb- mx-0">
                         <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-home.svg"
                                         alt="Icon"></span>Home</a></li>
@@ -247,6 +257,50 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="ul-rounded mt-4">
+                        <h5>Popular Tags </h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">#javascript</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#webdev</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#beginners</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#programming</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#tutorial</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#react</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#python</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#productivity</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#css</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#discuss</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#devops</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#career</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#node</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#opensource</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#html</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#typescript</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#aws</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#java</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#php</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#codenewbie</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#github</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#blockchain</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#kubernetes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#angular</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#security</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">#go</a></li>
+                        </ul>
+                    </div>
+                    
+                        <div class="article card p-3 mt-4">
+                            <img class="imagen my-0" src="/assets/home/aside-left-1.png" alt="">
+                            <h3 class=" mt-4 asideleft__letter asideleft__letter--bold ">Calling all early-career developers & coding mentors!</h3>
+                            <p class="mt-2 mb-0 asideleft__letter">Join CodeNewbie Community: a supportive space for coding newbies to connect & express themselves. <a class="no-text-decoration">Get in on the fun!</a></p>
+                        </div>
+                        <div class=" card p-3 mt-4">
+                            <img class="imagen my-0" src="/assets/home/aside-left-2.png" alt="">
+                            <h3 class=" mt-4 article__title ">The forem shop is here! </h3>
+                            <p class="mt-2 mb-0 asideleft__letter"><a class="no-text-decoration">>> Shop Forem, DEV, and CodeNewbie merch</a></p>
+                        </div>
+                    
+                    
                 </aside>
                 <!-- End Aside Left -->
                 <!-- Start Main Content -->
@@ -266,13 +320,16 @@
                                 <div class="d-flex align-items-center me-0">
                                     <img class="article__autor rounded-circle" src="/assets/home/autor1.jfif" alt="">
                                 </div>
-                                <div class="identation p-2 ms-3 pt-2">
-                                    <a class="article__link" href="#">
-                                        <h2 class="article__title article__title--ppal">Side Project Sunday! What's the
-                                            latest?
-                                        </h2>
-                                    </a>
-                                    <!-- <div class=" d-flex ">
+                                <div class="ms-2 ">
+                                    <p class="btn article__down name mb-0 p-1">Dennis Persson</p>
+                                    <label class="date d-block ms-1">Jul 31</label>
+                                </div>
+                            </div>
+                            <div class="identation p-3 ms-3 pt-2">
+                                <a class="article__link" href="#">
+                                    <h2 class="article__title">Side Project Sunday! What's the latest?
+                                    </h2>
+                                    <div class="d-flex ">
                                         <a class="btn article__btn article__btn--showdev">
                                             <span>#</span>showdev
                                         </a>
@@ -282,58 +339,9 @@
                                         <a class="btn article__btn article__btn--watercooler">
                                             <span>#</span>watercooler
                                         </a>
-                                        <a class="btn article__btn article__btn--discuss">
-                                            <span>#</span>discuss
-                                        </a>
-                                    </div> -->
-                                    <div class="pt-1 pb-0 d-flex justify-content-between">
-                                        <div>
-                                            <a class="btn article__down">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    role="img" aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70"
-                                                    class="crayons-icon">
-                                                    <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
-                                                    <path
-                                                        d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
-                                                    </path>
-                                                </svg>
-                                                15 reactions
-                                            </a>
-                                            <a class="btn article__down">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    role="img" aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz"
-                                                    class="crayons-icon">
-                                                    <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
-                                                    <path
-                                                        d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
-                                                    </path>
-                                                </svg>
-                                                23 comments
-                                            </a>
-                                        </div>
-                                        <div class="pb-1">
-                                            <span>1 min read</span>
-                                            <a class="btn article__btn article__btn--save m-2">Save</a>
-
-                                        </div>
+                                        
                                     </div>
-                                    <div class="identation p-2 ms-3 pt-2">
-                                        <a class="article__link" href="#">
-                                            <h2 class="article__title">List of Free Image Tools Every Frontend Developer
-                                                Needs
-                                            </h2>
-                                        </a>
-                                        <a class="btn article__btn article__btn--ux">
-                                            <span>#</span>ux
-                                        </a>
-                                        <a class="btn article__btn article__btn--css">
-                                            <span>#</span>css
-                                        </a>
-                                        <a class="btn article__btn article__btn--productivity">
-                                            <span>#</span>productivity
-                                        </a>
-                                    </div>
-                                    <div class="py-2 pb-0 d-flex justify-content-between">
+                                    <div class="py-1 pb-0 d-flex justify-content-between">
                                         <div>
                                             <a class="btn article__down">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -364,7 +372,7 @@
 
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </article>
@@ -385,7 +393,7 @@
                                     <h2 class="article__title">The Importance of Clean Code in Your Startup's Success
                                     </h2>
                                 </a>
-                                <!-- <div class="article d-flex ">
+                                 <div class="article d-flex ">
                                     <a class="btn article__btn article__btn--beginners">
                                         <span>#</span>begginers
                                     </a>
@@ -398,7 +406,7 @@
                                     <a class="btn article__btn article__btn--programming">
                                         <span>#</span>programming
                                     </a>
-                                </div> -->
+                                </div> 
                                 <div class="py-2 pb-0 d-flex justify-content-between">
                                     <div>
                                         <a class="btn article__down">
@@ -512,7 +520,7 @@
                                     <h2 class="article__title">The Importance of Clean Code in Your Startup's Success
                                     </h2>
                                 </a>
-                                <!-- <div class="article d-flex ">
+                                 <div class="article d-flex ">
                                     <a class="btn article__btn article__btn--beginners">
                                         <span>#</span>begginers
                                     </a>
@@ -523,7 +531,7 @@
                                         <span>#</span>computerscience
                                     </a>
 
-                                </div> -->
+                                </div> 
                                 <div class="py-1 pb-0 d-flex justify-content-between">
                                     <div>
                                         <a class="btn article__down">
@@ -561,7 +569,7 @@
                         <div class="px-4 pt-3">
                             <div class="d-flex ">
                                 <div class="d-flex align-items-center me-0">
-                                    <img class="article__autor rounded-circle" src="/assets/home/autor4.webp"" alt="">
+                                    <img class="article__autor rounded-circle" src="/assets/home/autor4.webp" alt="">
                                         </div>
                                         <div class=" ms-2 "> 
                                             <p class=" btn article__down name mb-0 p-1">Dennis Persson</p>
@@ -1010,7 +1018,7 @@
         </div>
         <!-- End Main conten -->
     </main>
-    <footer class="container-fluid mt-5" style="background-color:#e5e5e5">
+    <footer class="container-fluid mt-0" style="background-color:#e5e5e5">
         <div class="row text-center">
             <p><a href="#">DEV Community</a> — A constructive and inclusive social network for software developers. With
                 you every step of your journey.</p>
