@@ -397,16 +397,13 @@ label.date {
   }
 }
 .card__hover {
-  display: none;
+  display: relative;
   color: rgb(82, 82, 82);
-  border-top: 2rem solid black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  border-top: 2rem solid rgb(59, 73, 223);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  max-width: 360px;
+  max-width: 100%;
   height: auto;
   min-height: 300px;
   padding: 20px;
@@ -435,14 +432,190 @@ label.date {
 .card__hover li {
   display: grid;
 }
-
-header.fixed-top + main {
-  padding-top: calc(1.5rem + 56px);
-  margin-bottom: 1.5rem;
+.card__hover ul {
+  padding-left: 0;
 }
 
-.card-aside {
-  border-radius: 1rem;
+.post {
+  font-size: 16px;
+}
+.post span {
+  font-weight: 700;
+}
+.post__down {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.post__down:hover {
+  color: rgb(47, 58, 178);
+}
+.post__title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 45px;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+.post__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+.post__autor {
+  width: 40px;
+  height: 40px;
+}
+.post__logo {
+  width: 32px;
+  height: 32px;
+}
+.post__input {
+  width: 100%;
+  height: 64px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.post__btn {
+  font-size: 16px;
+}
+.post__btn--programming:hover {
+  background-color: rgba(137, 6, 6, 0.1);
+  border-color: #890606;
+}
+.post__btn--programming span {
+  color: #890606;
+}
+.post__btn--design:hover {
+  background-color: rgba(6, 255, 106, 0.1);
+  border-color: #06ff6a;
+}
+.post__btn--design span {
+  color: #06ff6a;
+}
+.post__btn--beginners:hover {
+  background-color: rgba(0, 131, 53, 0.1);
+  border-color: #008335;
+}
+.post__btn--beginners span {
+  color: #008335;
+}
+.post__btn--productivity:hover {
+  background-color: rgba(42, 7, 152, 0.1);
+  border-color: #2a0798;
+}
+.post__btn--productivity span {
+  color: #2a0798;
+}
+.post__btn--showdev:hover {
+  background-color: rgba(9, 27, 71, 0.1);
+  border-color: #091b47;
+}
+.post__btn--showdev span {
+  color: #091b47;
+}
+.post__btn--sideprojects:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  border-color: #3b49df;
+}
+.post__btn--sideprojects span {
+  color: #3b49df;
+}
+.post__btn--watercooler:hover {
+  background-color: rgba(208, 236, 255, 0.1);
+  border-color: #d0ecff;
+}
+.post__btn--watercooler span {
+  color: #d0ecff;
+}
+.post__btn--save {
+  background-color: #d6d6d7;
+  border: none;
+}
+.post__btn--save:hover {
+  background-color: #bdbdbd;
+}
+.post__btn--watercooler:hover {
+  background-color: rgba(208, 236, 255, 0.1);
+  border-color: #d0ecff;
+}
+.post__btn--watercooler span {
+  color: #d0ecff;
+}
+.post__btn--discuss:hover {
+  background-color: rgba(26, 214, 67, 0.1);
+  border-color: #1ad643;
+}
+.post__btn--discuss span {
+  color: #1ad643;
+}
+.post__btn--ux:hover {
+  background-color: rgba(0, 101, 179, 0.1);
+  border-color: #0065B3;
+}
+.post__btn--ux span {
+  color: #0065B3;
+}
+.post__btn--css:hover {
+  background-color: rgba(41, 101, 241, 0.1);
+  border-color: #2965F1;
+}
+.post__btn--css span {
+  color: #2965F1;
+}
+.post__btn--computerscience:hover {
+  background-color: rgba(217, 140, 217, 0.1);
+  border-color: #d98cd9;
+}
+.post__btn--computerscience span {
+  color: #d98cd9;
+}
+.post__btn--kubernetes:hover {
+  background-color: rgba(50, 109, 230, 0.1);
+  border-color: #326de6;
+}
+.post__btn--kubernetes span {
+  color: #326de6;
+}
+.post__btn--webdev:hover {
+  background-color: rgba(86, 39, 101, 0.1);
+  border-color: #562765;
+}
+.post__btn--webdev span {
+  color: #562765;
+}
+.post__btn--flutter:hover {
+  background-color: rgba(86, 197, 246, 0.1);
+  border-color: #56C5F6;
+}
+.post__btn--flutter span {
+  color: #56C5F6;
+}
+.post__btn--android:hover {
+  background-color: rgba(86, 160, 54, 0.1);
+  border-color: #56a036;
+}
+.post__btn--android span {
+  color: #56a036;
+}
+.post__btn--programming:hover {
+  background-color: rgba(137, 6, 6, 0.1);
+  border-color: #890606;
+}
+.post__btn--programming span {
+  color: #890606;
+}
+
+.aside__list {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+.aside__list a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .post-aside-left .navbar-nav {
