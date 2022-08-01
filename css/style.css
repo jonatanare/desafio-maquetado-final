@@ -24,12 +24,8 @@
   margin-right: 4px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .aside__publicity {
+  background-color: rgb(250, 250, 250);
   font-weight: 900;
   font-weight: 900;
   font-size: 24px;
@@ -47,6 +43,11 @@
 }
 .listing a:hover p {
   color: rgb(47, 58, 178);
+}
+.listing h4:hover {
+  background: none !important;
+  color: rgb(47, 58, 178);
+  cursor: pointer;
 }
 .listing__title {
   font-size: 20px;
@@ -76,11 +77,6 @@
 }
 .listing__nobg:hover p {
   color: rgb(47, 58, 178);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
 }
 
 body {
@@ -231,6 +227,34 @@ label.date {
 .article__btn--kubernetes span {
   color: #326de6;
 }
+.article__btn--webdev:hover {
+  background-color: rgba(86, 39, 101, 0.1);
+  border-color: #562765;
+}
+.article__btn--webdev span {
+  color: #562765;
+}
+.article__btn--flutter:hover {
+  background-color: rgba(86, 197, 246, 0.1);
+  border-color: #56C5F6;
+}
+.article__btn--flutter span {
+  color: #56C5F6;
+}
+.article__btn--android:hover {
+  background-color: rgba(86, 160, 54, 0.1);
+  border-color: #56a036;
+}
+.article__btn--android span {
+  color: #56a036;
+}
+.article__btn--programming:hover {
+  background-color: rgba(137, 6, 6, 0.1);
+  border-color: #890606;
+}
+.article__btn--programming span {
+  color: #890606;
+}
 .article__down {
   border: none;
   font-size: 14px;
@@ -249,4 +273,43 @@ label.date {
 header.fixed-top + main {
   padding-top: calc(1.5rem + 56px);
   margin-bottom: 1.5rem;
+}
+.card__hover {
+  display: none;
+  color: rgb(82, 82, 82);
+  border-top: 2rem solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 360px;
+  height: auto;
+  min-height: 300px;
+  padding: 20px;
+}
+.card__hover--img {
+  border-radius: 100%;
+  width: 50px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.card__hover--title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.card__hover--containerimage {
+  margin-top: -35px;
+}
+.card__hover--key {
+  font-weight: 700;
+}
+.card__hover--value {
+  margin-bottom: 8px;
+}
+.card__hover li {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */
