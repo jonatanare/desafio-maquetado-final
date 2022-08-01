@@ -80,6 +80,8 @@ header.fixed-top + main {
   display: flex;
   align-items: center;
   justify-content: end;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .wrapper-search .btn:hover {
   border: none;
@@ -441,4 +443,39 @@ header.fixed-top + main {
 
 .card-aside {
   border-radius: 1rem;
+}
+
+.post-aside-left .navbar-nav {
+  margin-top: 60px;
+  display: grid;
+  gap: 1rem;
+  max-height: 271px;
+}
+.post-aside-left .nav-icons {
+  border-radius: 50%;
+  width: 40px;
+}
+.post-aside-left .nav-icons--like:hover {
+  background-color: rgba(220, 38, 38, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.post-aside-left .nav-icons--like:hover svg {
+  fill: rgb(220, 38, 38);
+}
+.post-aside-left .nav-icons--unicorn:hover {
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(5, 150, 105, 0.1);
+}
+.post-aside-left .nav-icons--unicorn:hover svg {
+  fill: rgb(5, 150, 105);
+}
+.post-aside-left .nav-icons--save:hover {
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(79, 70, 229, 0.1);
+}
+.post-aside-left .nav-icons--save:hover svg {
+  fill: rgb(79, 70, 229);
 }/*# sourceMappingURL=style.css.map */
