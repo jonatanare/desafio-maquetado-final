@@ -234,14 +234,11 @@ label.date {
 }
 
 .card__hover{
-  display: none;
+  display: relative;
   color:rgb(82,82,82,1);
-  border-top: 2rem solid black;
-  position: absolute ;
-  top:50%;
-  left: 50%;
+  border-top: 2rem solid rgb(59, 73, 223);
   width: max-content;
-  max-width: 360px;
+  max-width: 100%;
   height: auto;
   min-height: 300px;
   padding: 20px;
@@ -268,6 +265,9 @@ label.date {
   }
   li{
     display: grid;
+  }
+  ul{
+    padding-left: 0;
   }
 
 }
