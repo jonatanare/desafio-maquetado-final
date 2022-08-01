@@ -72,6 +72,40 @@ header.fixed-top + main {
   font-weight: 700;
 }
 
+.form-search {
+  width: 420px;
+}
+
+.wrapper-search {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.wrapper-search .btn:hover {
+  border: none;
+  background-color: rgba(59, 73, 223, 0.1);
+  color: rgb(38, 38, 38);
+}
+.wrapper-search .btn:hover svg {
+  fill: rgba(59, 73, 223, 0.8);
+}
+.wrapper-search .btn:active {
+  border: none;
+}
+.wrapper-search .btn:focus {
+  border: none;
+}
+.wrapper-search .btn:focus-visible {
+  border: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .aside__publicity {
   background-color: rgb(250, 250, 250);
   font-weight: 900;
