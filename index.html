@@ -11,129 +11,189 @@
     <title>Desafio Final Maquetado</title>
 </head>
 
-<body style="background-color:whitesmoke;">
-
-    <div class="container-lg container-fluid">
-    <header class="row"> 
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <section role="navigation " class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">DEV Community</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-home.svg"
-                                        alt="Icon"></span>Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-reading.svg" alt="Icon"></span>Reading List</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-letter.svg" alt="Icon"></span>Listings</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-podcasts.svg" alt="Icon"></span>Podcasts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-video.svg"
-                                        alt="Icon"></span>Videos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-tags.svg"
-                                        alt="Icon"></span>Tags</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-faq.svg"
-                                        alt="Icon"></span>FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-forem-shop.svg" alt="Icon"></span>Forem Shop</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-sponsors.svg" alt="Icon"></span>Sponsors</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-about.svg"
-                                        alt="Icon"></span>About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-contact.svg" alt="Icon"></span>Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img class="img-fluid"
-                                        src="./assets/icons/icon-guies.svg" alt="Icon"></span>Guides</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span><img
-                                        src="./assets/icons/icon-software-comparisons.svg" alt="Icon"></span>Software
-                                comparisons</a></li>
-                    </ul>
-                </div>
-            </section>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img style="height:calc( 50px - .3125rem * 2)" src="/assets/logos/logo-devto.png"></img>
-            </a>
-            <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-                <input class="form-control mr-sm-2 w-auto" type="search" placeholder="Search" aria-label="Search">
-            </form>
-
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerEasybank">
-                <div class="d-none d-md-flex ">
-                    <button class="btn btn-outline-primary m-auto">Create Post</button>
-                    <button class="btn btn-light btn-md">
-                        <img src="./assets/icons//icon-notifications.svg" alt="Icon notification">
+<body>
+    <header class="navbar-light fixed-top header-static bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <button class="btn rounded-pill btn-avatar">
-                        <img class="rounded-pill img-avatar" src="./assets/home/avatar-home.webp" alt="Avatar Session">
+                    <a class="navbar-brand" href="#"><img style="height:calc( 50px - .3125rem * 2)"
+                            src="/assets/logos/logo-devto.png"></img></a>
+                </div>
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <input class="form-control mr-sm-2 w-auto" type="search" placeholder="Search" aria-label="Search">
+                </form>
+
+                <div class="d-flex items-center h-100 ml-auto">
+                    <button class="btn bg-transparent btn-sm d-md-none">
+                        <img src="./assets/icons/icon-search.svg" alt="Icon reach">
+                    </button>
+                    <button class="btn btn-outline-primary m-auto d-none d-md-flex">Create Post</button>
+                    <button class="btn bg-transparent btn-sm position-relative ">
+                        <img src="./assets/icons/icon-notifications.svg" alt="Icon notification">
+                        <span class="position-absolute translate-middle badge bg-danger">
+                            9
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                    <button class="btn btn-sm p-1 wrapper-avatar c-btn">
+                        <span class="btn-avatar">
+                            <img class="img-avatar" src="./assets/home/avatar-home.webp" alt="Avatar Session">
+                        </span>
                     </button>
                 </div>
+
+
+
+                <section role="navigation " class="offcanvas offcanvas-start d-lg-none" tabindex="-1"
+                    id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">DEV Community</h5>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mb-4">
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-home.svg" alt="Icon"></span>Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-reading.svg" alt="Icon"></span>Reading List</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-letter.svg" alt="Icon"></span>Listings</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-podcasts.svg" alt="Icon"></span>Podcasts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-video.svg" alt="Icon"></span>Videos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-tags.svg" alt="Icon"></span>Tags</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-faq.svg" alt="Icon"></span>FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-forem-shop.svg" alt="Icon"></span>Forem Shop</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-sponsors.svg" alt="Icon"></span>Sponsors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-about.svg" alt="Icon"></span>About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-contact.svg" alt="Icon"></span>Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img class="img-fluid"
+                                            src="./assets/icons/icon-guies.svg" alt="Icon"></span>Guides</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span><img
+                                            src="./assets/icons/icon-software-comparisons.svg"
+                                            alt="Icon"></span>Software
+                                    comparisons</a></li>
+                        </ul>
+                        <h2 class="other-title">Other</h2>
+                        <ul class="navbar-nav">
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-code-conduct.svg" alt="Icon code conduct">
+                                    </span>
+                                    Code of Conduct
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-privacy-policy.svg"
+                                            alt="Icon code privacy policy">
+                                    </span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="./assets/icons/icon-terms-use.svg" alt="Icon term use">
+                                    </span>
+                                    Terms of use
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-flex flex-row justify-content-between">
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-twitter.svg" alt="Icon twitter">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-facebook.svg" alt="Icon facebook">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-github.svg" alt="Icon github">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-instagram.svg" alt="Icon instagram">
+                                </a>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-link mx-1" href="#">
+                                    <img src="./assets/icons/icon-twitch.svg" alt="Icon twitch">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-
         </nav>
     </header>
+    <section class="row">
+        <aside class="d-none d-md-block col-md-2 p-0">
+            <div class="sidebar-container "></div>
+            <section class="menu">
+                <div class="card p-3">
+                    <h3 class="text-primary">DEV Community</h3>
+                    <h3 class=""> is a community of 883,369 amazing developers</h3>
+                    <p class="light">We're a place where coders share, stay up-to-date and grow their careers.</p>
+                    <button class="btn btn-outline-primary mt-3 ">Create acount</button>
+                    <button class="btn bg-white mb-3">Log in</button>
 
-    
-        <section class="row">
-            <aside class="d-none d-md-block col-md-2 p-0">
-                <div class="sidebar-container "></div>
-                <section class="menu">
-                    <div class="card p-3">
-                        <h3 class="text-primary">DEV Community</h3>
-                        <h3 class=""> is a community of 883,369 amazing developers</h3>
-                        <p class="light">We're a place where coders share, stay up-to-date and grow their careers.</p>
-                        <button class="btn btn-outline-primary mt-3 ">Create acount</button>
-                        <button class="btn bg-white mb-3">Log in</button>
-
-                    </div>
-                    <div class="card p-3">
-                        <div class="list-group">
-                            <a class="list-group-item" style="border:0;" href="#"><img src="/assets/icons/icon-home.svg"
-                                    alt="">Home</a>
-                            <a class="list-group-item" style="border:0;" href="#"><img
-                                    src="/assets/icons/icon-video.svg" alt="">Listings</a>
-                            <a class="list-group-item" style="border:0;" href="#"><img
-                                    src="/assets/icons/icon-video.svg" alt="">Podcats</a>
-                        </div>
-
+                </div>
+                <div class="card p-3">
+                    <div class="list-group">
+                        <a class="list-group-item" style="border:0;" href="#"><img src="/assets/icons/icon-home.svg"
+                                alt="">Home</a>
+                        <a class="list-group-item" style="border:0;" href="#"><img src="/assets/icons/icon-video.svg"
+                                alt="">Listings</a>
+                        <a class="list-group-item" style="border:0;" href="#"><img src="/assets/icons/icon-video.svg"
+                                alt="">Podcats</a>
                     </div>
 
-                    <!-- <a class="d-block" href="#"><img src="/assets/icons/icon-home.svg" alt="">Home</a>
+                </div>
+
+                <!-- <a class="d-block" href="#"><img src="/assets/icons/icon-home.svg" alt="">Home</a>
                         <a class="d-block" href="#"><img src="/assets/icons/icon-video.svg" alt="">Listings</a>
                         <a class="d-block" href="#"><img src="/assets/icons/icon-video.svg" alt="">Podcats</a> -->
 
-                </section>
-            </aside>
-            </aside>
-            <main class="col-12 col-md-10 col-lg-7">
-                <div class="mb-2 menu-main">
-                        <a class="btn current menu-main__btn" href="#">Relevant</a>
-                        <a class="btn menu-main__btn" href="#">Latest</a>
-                        <a class="btn menu-main__btn" href="#">Top</a>                    
+            </section>
+        </aside>
+        </aside>
+        <main class="col-12 col-md-10 col-lg-7">
+            <div class="mb-2 menu-main">
+                <a class="btn current menu-main__btn" href="#">Relevant</a>
+                <a class="btn menu-main__btn" href="#">Latest</a>
+                <a class="btn menu-main__btn" href="#">Top</a>
+            </div>
+
+            <article class="article card mb-2">
+                <div>
+                    <img class="w-100 m-0" src="/assets/home/last-post-home.webp" alt="">
                 </div>
-                
-                <article class="article card mb-2">
-                    <div>
-                    <img class="w-100 m-0"src="/assets/home/last-post-home.webp" alt="">
-                    </div>
-                    <div class="px-4 pt-3 pe-1">
-                        <div class="d-flex ">
-                            <div class="d-flex align-items-center me-0">
+                <div class="px-4 pt-3 pe-1">
+                    <div class="d-flex ">
+                        <div class="d-flex align-items-center me-0">
                             <img class="article__autor rounded-circle" src="/assets/home/autor1.jfif" alt="">
-                            </div>
-                            <div class="ms-2 "> 
-                                <p class="btn article__down name mb-0 p-1">Ben Halpern</p>
-                                <label class="date d-block ms-1">Jul 31</label>
-                            </div>
                         </div>
                         <div class="identation p-2 ms-3 pt-2">
                             <a class="article__link" href="#">
@@ -161,28 +221,20 @@
                                     15 reactions
                                 </a>
                                 <a class="btn article__down">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon"><title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
-                                    23 comments 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                                        aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
+                                        <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
+                                        <path
+                                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                        </path>
+                                    </svg>
+                                    23 comments
                                 </a>
                                 </div>
                                 <div class="pb-1">
                                     <span>1 min read</span>
                                     <a class="btn article__btn article__btn--save m-2">Save</a>
 
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                </article>
-                <article class="article card mb-2">
-                    <div class="px-4 pt-3 pe-1">
-                        <div class="d-flex ">
-                            <div class="d-flex align-items-center me-0">
-                            <img class="article__autor rounded-circle" src="/assets/home/autor2.webp" alt="">
-                            </div>
-                            <div class="ms-2 "> 
-                                <p class="btn article__down name mb-0 p-1">Dennis Persson</p>
-                                <label class="date d-block ms-1">Jul 31</label>
                             </div>
                         </div>
                         <div class="identation p-2 ms-3 pt-2">
@@ -190,6 +242,126 @@
                                 <h2 class="article__title">List of Free Image Tools Every Frontend Developer Needs
                                   </h2>
                             </a>
+                            <a class="btn article__btn article__btn--ux">
+                                <span>#</span>ux
+                            </a>
+                            <a class="btn article__btn article__btn--css">
+                                <span>#</span>css
+                            </a>
+                            <a class="btn article__btn article__btn--productivity">
+                                <span>#</span>productivity
+                            </a>
+                        </div>
+                        <div class="py-2 pb-0 d-flex justify-content-between">
+                            <div>
+                                <a class="btn article__down">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                                        aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon">
+                                        <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
+                                        <path
+                                            d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                        </path>
+                                    </svg>
+                                    2 reactions
+                                </a>
+                                <a class="btn article__down">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                                        aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
+                                        <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
+                                        <path
+                                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                        </path>
+                                    </svg>
+                                    Add Comment
+                                </a>
+                            </div>
+                            <div>
+                                <span>6 min read</span>
+                                <a class="btn article__btn article__btn--save m-1">Save</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article card mb-2">
+                <div class="px-4 pt-3 pe-1">
+                    <div class="d-flex ">
+                        <div class="d-flex align-items-center me-0">
+                            <img class="article__autor rounded-circle" src="/assets/home/autor3.webp"" alt="">
+                            </div>
+                            <div class=" ms-2 "> 
+                                <p class=" btn article__down name mb-0 p-1">Daniel</p>
+                            <label class="date d-block ms-1">Jul 31</label>
+                        </div>
+                    </div>
+                    <div class="identation p-3 ms-3 pt-2">
+                        <a class="article__link" href="#">
+                            <h2 class="article__title">The Importance of Clean Code in Your Startup's Success
+                            </h2>
+                        </a>
+                        <div class="article d-flex ">
+                            <a class="btn article__btn article__btn--beginners">
+                                <span>#</span>begginers
+                            </a>
+                            <a class="btn article__btn article__btn--productivity">
+                                <span>#</span>productivity
+                            </a>
+                            <a class="btn article__btn article__btn--computerscience">
+                                <span>#</span>computerscience
+                            </a>
+                            <a class="btn article__btn article__btn--programming">
+                                <span>#</span>programming
+                            </a>
+                        </div>
+                        <div class="py-2 pb-0 d-flex justify-content-between">
+                            <div>
+                                <a class="btn article__down">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                                        aria-labelledby="ad12gw0m6d11o0gx9hm3b4snwzz5rj70" class="crayons-icon">
+                                        <title id="ad12gw0m6d11o0gx9hm3b4snwzz5rj70">Reactions</title>
+                                        <path
+                                            d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                        </path>
+                                    </svg>
+                                    2 reactions
+                                </a>
+                                <a class="btn article__down">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                                        aria-labelledby="anjovkr8u7turzmmcr1ekle3dz6trdhz" class="crayons-icon">
+                                        <title id="anjovkr8u7turzmmcr1ekle3dz6trdhz">Comments</title>
+                                        <path
+                                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                        </path>
+                                    </svg>
+                                    Add Comment
+                                </a>
+                            </div>
+                            <div>
+                                <span>6 min read</span>
+                                <a class="btn article__btn article__btn--save m-1">Save</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="article card mb-2">
+                <div class="px-4 pt-3 pe-1">
+                    <div class="d-flex ">
+                        <div class="d-flex align-items-center me-0">
+                            <img class="article__autor rounded-circle" src="/assets/home/autor4.webp" alt="">
+                        </div>
+                        <div class="ms-2 ">
+                            <p class="btn article__down name mb-0 p-1">Dennis Persson</p>
+                            <label class="date d-block ms-1">Jul 31</label>
+                        </div>
+                    </div>
+                    <div class="identation p-3 ms-3 pt-2">
+                        <a class="article__link" href="#">
+                            <h2 class="article__title">List of Free Image Tools Every Frontend Developer Needs
+                            </h2>
                             <div class="article d-flex ">
                                 <a class="btn article__btn article__btn--webdev">
                                     <span>#</span>webdev
@@ -519,20 +691,21 @@
                             </div>
                         </div>    
                     </div>
-                </article>
-               
+                </div>
+            </article>
 
 
-                
-            </main>
-            <aside class="aside aside d-none d-lg-block col-lg-3 p-0">
-                <a class="text-decoration-none" href="#">
-                    <div class="aside__publicity card p-3 ">
+
+
+        </main>
+        <aside class="aside aside d-none d-lg-block col-lg-3 p-0">
+            <a class="text-decoration-none" href="#">
+                <div class="aside__publicity card p-3 ">
                     <img class="my-3" src="/assets/home/publicidad_ejemplo.jfif" alt="">
                     <h3 class="aside__publicity aside__publicity--title">Forem for Android is here!</h3>
                 </div>
-                </a>
-                <section class="listing card mt-3">
+            </a>
+            <section class="listing card mt-3">
 
                    <div class="d-flex nav-tabs p-3 justify-content-between align-items-center">
                         <h4 class="listing__title strong form-inline m-0">Listings</h4>
@@ -543,28 +716,29 @@
                         <p class="listing__text mb-1">Discord server for learning by contributing 👨‍💻</p>
                         <figcaption class="listing__figcaption">mentors</figcaption>
                     </div>
-                    </a>
-                    <a class="text-decoration-none" href="#">
-                        <div class="p-3 nav-tabs">
+                </a>
+                <a class="text-decoration-none" href="#">
+                    <div class="p-3 nav-tabs">
                         <p class="listing__text mb-1">🐤 Chirp Developer Conference and Challenge</p>
                         <figcaption class="listing__figcaption">events</figcaption>
                     </div>
-                    </a>
-                    <a class="text-decoration-none" href="#">
+                </a>
+                <a class="text-decoration-none" href="#">
                     <div class="p-3 nav-tabs">
                         <p class="listing__text mb-1">Technical writer available for hire</p>
                         <figcaption class="listing__figcaption">forhire</figcaption>
                     </div>
-                    </a>
-                    <a class="text-decoration-none" href="#">
+                </a>
+                <a class="text-decoration-none" href="#">
                     <div class="p-3 nav-tabs">
                         <p class="listing__text mb-1">🆘 Help Needed for Low-code Framework for Node.js</p>
                         <figcaption class="listing__figcaption">collabs</figcaption>
                     </div>
-                    </a>
-                    <a class="text-decoration-none" href="#">
+                </a>
+                <a class="text-decoration-none" href="#">
                     <div class="p-3 nav-tabs">
-                        <p class="listing__text mb-1">🚨🚨🚨 tsParticles is looking for contributors, any kind of JavaScript/TypeScript experience is welcome ⭐️⭐️⭐️</p>
+                        <p class="listing__text mb-1">🚨🚨🚨 tsParticles is looking for contributors, any kind of
+                            JavaScript/TypeScript experience is welcome ⭐️⭐️⭐️</p>
                         <figcaption class="listing__figcaption">collabs</figcaption>
                     </div>
                     </a>
@@ -667,41 +841,41 @@
 
 
 
-        </section>
+    </section>
 
-        <div class="card__hover card">
-            <div class="d-flex -mt-4 card__hover--containerimage">
-                <div class="d-flex align-items-center me-0">
-                <img class="card__hover--img" src="/assets/home/autor8.webp" alt="">
-                </div>
-                <div class="ms-2 " style="align-items: flex-end;display: flex;"> 
-                    <p class="card__hover--title">Thomas Hansen</p>
-                    
-                </div>
+    <div class="card__hover card">
+        <div class="d-flex -mt-4 card__hover--containerimage">
+            <div class="d-flex align-items-center me-0">
+            <img class="card__hover--img" src="/assets/home/autor8.webp" alt="">
             </div>
-            <div class="mt-2">
-                <button class="btn btn-primary w-100">Follow</button>
+            <div class="ms-2 " style="align-items: flex-end;display: flex;"> 
+                <p class="card__hover--title">Thomas Hansen</p>
+                
             </div>
-            <p class="mt-4">
-                Obsessed with low-code and automation, responsible for 2.8 million downloads at NuGet, and plays 5 musical instruments if you extort me
-            </p>
-
-            <ul>
-                <li>
-                    <label  class="card__hover--key">Work</label>
-                    <label  class="card__hover--value">CEO at Aista, Ltd</label>
-                </li>
-                <li>
-                    <label  class="card__hover--key">Location</label>
-                    <label  class="card__hover--value">Cyprus</label>
-                </li>
-                <li>
-                    <label  class="card__hover--key">Joined</label>
-                    <label  class="card__hover--value"><time datetime="2022-03-13T08:00:39Z" class="date">March 13, 2022</time></label>
-                </li>
-            </ul>
-        
         </div>
+        <div class="mt-2">
+            <button class="btn btn-primary w-100">Follow</button>
+        </div>
+        <p class="mt-4">
+            Obsessed with low-code and automation, responsible for 2.8 million downloads at NuGet, and plays 5 musical instruments if you extort me
+        </p>
+
+        <ul>
+            <li>
+                <label  class="card__hover--key">Work</label>
+                <label  class="card__hover--value">CEO at Aista, Ltd</label>
+            </li>
+            <li>
+                <label  class="card__hover--key">Location</label>
+                <label  class="card__hover--value">Cyprus</label>
+            </li>
+            <li>
+                <label  class="card__hover--key">Joined</label>
+                <label  class="card__hover--value"><time datetime="2022-03-13T08:00:39Z" class="date">March 13, 2022</time></label>
+            </li>
+        </ul>
+    
+    </div>
  
 
     <footer class="row mt-5" style="background-color:#e5e5e5">
@@ -714,7 +888,7 @@
             </p>
         </div>
     </footer>
-    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
