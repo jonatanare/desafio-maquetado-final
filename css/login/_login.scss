@@ -27,6 +27,12 @@ width: 640px;
     width: 90%;
 }
 
+&__email{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
 }
 
 .btn__icon{
@@ -41,6 +47,16 @@ width: 640px;
         fill: currentColor;
     }
 }
+
+.btn__continue{
+background-color: rgba(59,73,223,1);
+font-weight: 500;
+height: 48px;
+&:hover{
+    background-color: rgba(47,58,178,1);
+}
+}
+
 
 .btn__apps{
     width: 90%;

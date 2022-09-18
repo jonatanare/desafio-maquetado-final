@@ -693,6 +693,10 @@ label.date {
 .login__form {
   width: 90%;
 }
+.login__email {
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .btn__icon {
   fill: white;
@@ -703,6 +707,15 @@ label.date {
   background-color: 0a3e4a;
   color: white;
   fill: currentColor;
+}
+
+.btn__continue {
+  background-color: rgb(59, 73, 223);
+  font-weight: 500;
+  height: 48px;
+}
+.btn__continue:hover {
+  background-color: rgb(47, 58, 178);
 }
 
 .btn__apps {
