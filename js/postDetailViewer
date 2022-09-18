@@ -1,0 +1,48 @@
+/**Funcion constructora de post */  
+const body = document.querySelector( 'body' );
+    function postDetailBuilder( postStructureId, headerImg, ownerImg, ownerName, postDescription, postTitle, postHashtags, postContent, postComments, postCommentsTitle, buttonSubscribe, userLogedComment, userLogedImg, userCommentInput, allComments ){
+        postStructureId = document.createElement( 'article' );
+        headerImg = document.createElement( 'img' );
+        ownerInfo = document.createElement( 'div' );    
+        ownerImg = document.createElement( 'img' );
+        ownerName = document.createElement( 'p' );
+        postDescription = document.createElement( 'p' );
+        postTitle = document.createElement( 'h1' );
+        postHashtags = document.createElement( 'p' );
+        postContent = document.createElement( 'p' );
+        postComments = document.createElement( 'div' );
+        postCommentsTitle = document.createElement( 'h2' );    
+        buttonSubscribe = document.createElement( 'button' );
+        userLogedComment = document.createElement( 'div' );
+        userLogedImg = document.createElement( 'img' );
+        userCommentInput = document.createElement( 'input' );
+        allComments = document.createElement( 'div' );
+    
+        article.id = postStructureId;
+        headerImg.src = headerImg;
+        ownerInfo.class = 'ownerInfo';
+        ownerImg,src = ownerImg;
+        ownerName.class = 'OnerName';
+        ownerName.innerText = postowner;
+        postDescription = postDescription;  
+        h1.innerText = postTitle;
+        postHashtags = postHashtags;
+        postContent. innerText = postComment;
+        h2. innerText = postCommentsTitle;
+        postComments.class = 'postComments';
+        buttonSubscribe.class = 'buttonSubscribe';
+        userLogedComment.class = 'userLoged';
+        userLogedComment = userLogedComment;
+        userLogedImg.scr = userLogedImg;
+        userCommentInput.class = 'userComment';
+        allComments.class = 'commentsArea';
+    
+        article.appendchild( headerImg, ownerInfo, ownerImg,
+            ownerName, postDescription, h1, postHashtags, postBody, postContent, h2, buttonSubscribe, userLogedComment, userCommentInput, allComments );
+    
+        ownerInfo.appendchild( ownerImg, ownerName, postDescription ); 
+        
+        postComments.appendchild( buttonSubscribe,userLogedComment, userLogedImg, userCommentInput );
+    
+    }
+

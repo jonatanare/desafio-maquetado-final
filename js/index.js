@@ -35,7 +35,3 @@ btnContinue.addEventListener('click', (event) =>{
 } 
 })
 
-
-
- 
-  
