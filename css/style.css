@@ -666,8 +666,32 @@ label.date {
 }
 
 .login {
-  margin-top: 120px;
-  width: 30%;
+  margin-top: 180px;
+  width: 640px;
+}
+.login__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37.5px;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  margin-bottom: 0;
+}
+.login__anounce {
+  font-size: 14px;
+}
+.login__anounce::after {
+  border: 1px solid var(--base-20);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-radius: var(--radius);
+}
+.login__form {
+  width: 90%;
 }
 
 .btn__icon {
@@ -682,15 +706,19 @@ label.date {
 }
 
 .btn__apps {
-  width: 85%;
+  width: 90%;
   margin: auto;
   display: block;
   color: white;
   border-radius: 6px;
-  width: 544px;
   height: 48px;
   line-height: 24px;
   font-size: 16px;
+  border-style: none;
+  padding: 12px, 20px, 12px, 12px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: 100%;
 }
 .btn__apps--apple {
   background-color: #1b1b1b;
@@ -702,4 +730,10 @@ label.date {
 }
 .btn__apps--forem {
   background-color: #0a3e4a;
+}
+.btn__apps--github {
+  background-color: #24292e;
+}
+.btn__apps--twitter {
+  background-color: #0096f2;
 }/*# sourceMappingURL=style.css.map */
