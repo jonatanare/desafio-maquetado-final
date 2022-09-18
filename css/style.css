@@ -202,6 +202,28 @@ header.fixed-top + main {
   color: rgb(47, 58, 178);
 }
 
+.footer {
+  padding: 60px;
+}
+.footer__paragraph {
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 17.5px;
+}
+.footer__link {
+  text-decoration: none;
+  color: rgb(59, 73, 223);
+}
+.footer__imgAnchor {
+  width: 44px;
+  height: 50px;
+  align-items: center;
+}
+.footer__imgAnchor--svg {
+  width: 24px;
+  height: 30px;
+}
+
 .row > * {
   padding-right: 5px;
   padding-left: 5px;
