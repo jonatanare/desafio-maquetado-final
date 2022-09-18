@@ -10,11 +10,14 @@
 
 .wrapper-avatar {
   border-radius: 9999px;
+  margin-left: 15px;
+  margin-right: 10px;
 }
 
 .btn-sm {
   width: 40px;
   height: 40px;
+  margin-left: 15px;
 }
 
 .badge {
@@ -688,8 +691,39 @@ label.date {
 }
 
 .login {
-  margin-top: 120px;
-  width: 30%;
+  margin-top: 80px;
+  width: 70vh;
+}
+.login__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37.5px;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  margin-bottom: 0;
+}
+.login__text {
+  font-size: 16px;
+}
+.login__anounce {
+  font-size: 14px;
+}
+.login__anounce::after {
+  border: 1px solid var(--base-20);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-radius: var(--radius);
+}
+.login__form {
+  width: 90%;
+}
+.login__email {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .btn__icon {
@@ -703,16 +737,29 @@ label.date {
   fill: currentColor;
 }
 
+.btn__continue {
+  background-color: rgb(59, 73, 223);
+  font-weight: 500;
+  height: 48px;
+}
+.btn__continue:hover {
+  background-color: rgb(47, 58, 178);
+}
+
 .btn__apps {
-  width: 85%;
+  width: 90%;
   margin: auto;
   display: block;
   color: white;
   border-radius: 6px;
-  width: 544px;
   height: 48px;
   line-height: 24px;
   font-size: 16px;
+  border-style: none;
+  padding: 12px, 20px, 12px, 12px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: 100%;
 }
 .btn__apps--apple {
   background-color: #1b1b1b;
@@ -724,4 +771,10 @@ label.date {
 }
 .btn__apps--forem {
   background-color: #0a3e4a;
+}
+.btn__apps--github {
+  background-color: #24292e;
+}
+.btn__apps--twitter {
+  background-color: #0096f2;
 }/*# sourceMappingURL=style.css.map */
