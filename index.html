@@ -14,6 +14,7 @@
 
 <body>
 <!-- EQUIPO 4 -->
+
     <header class="navbar-light fixed-top header-static bg-white shadow-sm">
         <nav class="navbar navbar-expand-lg">
             <div class="container p-md-0">
@@ -38,15 +39,17 @@
                     <button class="btn bg-transparent btn-sm d-md-none">
                         <img src="./assets/icons/icon-search.svg" alt="Icon reach">
                     </button>
-                    <button class="btn btn-outline-primary m-auto d-none d-md-flex">Create Post</button>
-                    <button class="btn bg-transparent btn-sm position-relative ">
+                    <button class="btn btn__login btn-outline-primary m-auto me-4" id="btn-login">Log in</button>
+                    <button class="btn btn__account btn-outline-primary m-auto me-5" id="btn-create">Create Account</button>
+
+                    <button class="btn btn-outline-primary m-auto d-none" id="btn-post">Create Post</button>
+                    <button class="btn bg-transparent btn-sm position-relative d-none" id="btn-notif">
                         <img src="./assets/icons/icon-notifications.svg" alt="Icon notification">
                         <span class="position-absolute translate-middle badge bg-danger">
-                            9
                             <span class="visually-hidden">unread messages</span>
                         </span>
                     </button>
-                    <button class="btn btn-sm p-1 wrapper-avatar c-btn">
+                    <button class="btn btn-sm p-1 wrapper-avatar c-btn d-none" id="btn-avatar">
                         <span class="btn-avatar">
                             <img class="img-avatar" src="./assets/home/avatar-home.webp" alt="Avatar Session">
                         </span>
@@ -155,8 +158,51 @@
             </div>
         </nav>
     </header>
+    <section class="container mx-auto login">
+        <div class="hola">
+            <h2 class="d-block">Welcome to DEV Community 👩‍💻👨‍💻</h2>
+            <p>DEV Community 👩‍💻👨‍💻 is a community of 923,820 amazing developers</p>
+            <button class="btn__apps btn__apps--apple"> <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a8wi7o4syaayc8h31k12ki3xi46fsupr" aria-hidden="true" class="btn__icon"><title id="a8wi7o4syaayc8h31k12ki3xi46fsupr">apple</title>
+                <path d="M11.752 6.657c.828 0 1.867-.56 2.486-1.307.56-.677.969-1.623.969-2.568 0-.129-.012-.257-.036-.362-.922.035-2.03.618-2.696 1.4-.525.596-1.004 1.53-1.004 2.487 0 .14.024.28.035.326.059.012.152.024.245.024zM8.834 20.78c1.132 0 1.634-.759 3.046-.759 1.436 0 1.75.736 3.011.736 1.238 0 2.066-1.144 2.848-2.265.876-1.284 1.238-2.544 1.261-2.603-.082-.023-2.451-.992-2.451-3.711 0-2.358 1.867-3.42 1.972-3.502-1.237-1.774-3.116-1.82-3.63-1.82-1.389 0-2.52.84-3.233.84-.77 0-1.786-.794-2.988-.794-2.288 0-4.61 1.89-4.61 5.462 0 2.218.863 4.564 1.925 6.082.91 1.284 1.705 2.334 2.849 2.334z"></path>
+            </svg> Continue with Apple</button>
+
+            <button class="btn__apps btn__apps--forem"> <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="24" height="24" viewBox="0 0 200.000000 200.000000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="acikop4z6bxqjlto2n332en8imfpu6s2" aria-hidden="true" class="btn__icon btn__icon--forem"><title id="acikop4z6bxqjlto2n332en8imfpu6s2">forem</title>
+                <g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" fill="white" stroke="none">
+                <path d="M0 1000 l0 -1000 1000 0 1000 0 0 1000 0 1000 -1000 0 -1000 0 0 -1000z m1507 684 c91 -55 130 -189 84 -290 -22 -48 -95 -114 -128 -114 -19 0 -25 9 -39 57 l-17 57 26 20 c14 12 31 34 37 50 15 40 -14 98 -55 110 -52 15 -58 21 -72 70 -11 38 -12 51 -1 63 20 24 107 12 165 -23z m-247 -25 c6 -11 12 -39 13 -62 2 -41 2 -42 -45 -57 -68 -22 -70 -26 -52 -100 22 -88 28 -94 88 -76 26 8 54 12 61 10 15 -6 40 -97 32 -118 -3 -8 -31 -21 -61 -30 -31 -9 -56 -20 -56 -24 0 -4 18 -72 40 -152 22 -80 40 -153 40 -162 0 -21 -106 -56 -121 -41 -6 6 -25 68 -44 139 -43 167 -155 586 -160 600 -7 24 16 37 111 65 120 34 140 35 154 8z m-485 -185 c67 -33 136 -105 155 -163 16 -48 13 -53 -52 -74 l-48 -16 -17 26 c-10 15 -35 43 -55 64 -67 68 -175 71 -252 7 -48 -39 -67 -77 -71 -144 -1 -30 -5 -57 -7 -59 -10 -10 -97 -28 -110 -22 -38 14 -29 147 17 237 25 49 94 119 144 144 84 44 206 44 296 0z m791 -730 c12 -48 -2 -147 -30 -201 -37 -75 -76 -115 -148 -154 -58 -31 -70 -34 -148 -34 -73 0 -93 4 -143 29 -67 32 -128 92 -157 152 -25 51 -19 68 29 83 64 19 78 15 103 -30 33 -58 94 -92 168 -92 106 0 178 71 189 186 l6 61 40 12 c65 20 84 17 91 -12z"></path>
+                </g>
+                </svg> Continue with Forem</button>
+
+            <button class="btn__apps btn__apps--apple"> <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a8wi7o4syaayc8h31k12ki3xi46fsupr" aria-hidden="true" class="btn__icon"><title id="a8wi7o4syaayc8h31k12ki3xi46fsupr">apple</title>
+                <path d="M11.752 6.657c.828 0 1.867-.56 2.486-1.307.56-.677.969-1.623.969-2.568 0-.129-.012-.257-.036-.362-.922.035-2.03.618-2.696 1.4-.525.596-1.004 1.53-1.004 2.487 0 .14.024.28.035.326.059.012.152.024.245.024zM8.834 20.78c1.132 0 1.634-.759 3.046-.759 1.436 0 1.75.736 3.011.736 1.238 0 2.066-1.144 2.848-2.265.876-1.284 1.238-2.544 1.261-2.603-.082-.023-2.451-.992-2.451-3.711 0-2.358 1.867-3.42 1.972-3.502-1.237-1.774-3.116-1.82-3.63-1.82-1.389 0-2.52.84-3.233.84-.77 0-1.786-.794-2.988-.794-2.288 0-4.61 1.89-4.61 5.462 0 2.218.863 4.564 1.925 6.082.91 1.284 1.705 2.334 2.849 2.334z"></path>
+            </svg> Continue with Apple</button>
+
+            <button class="btn__apps btn__apps--apple"> <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a8wi7o4syaayc8h31k12ki3xi46fsupr" aria-hidden="true" class="btn__icon"><title id="a8wi7o4syaayc8h31k12ki3xi46fsupr">apple</title>
+                <path d="M11.752 6.657c.828 0 1.867-.56 2.486-1.307.56-.677.969-1.623.969-2.568 0-.129-.012-.257-.036-.362-.922.035-2.03.618-2.696 1.4-.525.596-1.004 1.53-1.004 2.487 0 .14.024.28.035.326.059.012.152.024.245.024zM8.834 20.78c1.132 0 1.634-.759 3.046-.759 1.436 0 1.75.736 3.011.736 1.238 0 2.066-1.144 2.848-2.265.876-1.284 1.238-2.544 1.261-2.603-.082-.023-2.451-.992-2.451-3.711 0-2.358 1.867-3.42 1.972-3.502-1.237-1.774-3.116-1.82-3.63-1.82-1.389 0-2.52.84-3.233.84-.77 0-1.786-.794-2.988-.794-2.288 0-4.61 1.89-4.61 5.462 0 2.218.863 4.564 1.925 6.082.91 1.284 1.705 2.334 2.849 2.334z"></path>
+            </svg> Continue with Apple</button>
+            
+          
+            <span>Have a password? Continue with your email address</span>
+        </div>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </section>
+
     <!-- MAIN CONTENT START -->
-    <main>
+    <main class="d-none">
         <!-- Start Main conten -->
         <div class="container p-1 p-lg-2">
             <!-- Start Row -->
@@ -172,7 +218,6 @@
                     </div> -->
                     
                     
-                </section>   
                     <ul class="navbar-nav mb- mx-0">
                         <li class="nav-item"><a class="nav-link" href="#"><span><img src="./assets/icons/icon-home.svg"
                                         alt="Icon"></span>Home</a></li>
@@ -1013,6 +1058,7 @@
         </div>
         <!-- End Main conten -->
     </main>
+    <!-- FOOTER -->
     <footer class="container-fluid mt-0" style="background-color:#e5e5e5">
         <div class="row text-center footer d-flex justify-content-center">
             <p class="footer__paragraph mb-0"><a href="#" class="footer__link" >DEV Community</a> 👩‍💻👨‍💻  — A constructive and inclusive social network for software developers. With
@@ -1031,13 +1077,9 @@
               </a>
         </div>
     </footer>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-        crossorigin="anonymous"></script>
+    <script src="././js/index.js" type="module"></script>
 </body>
 
 
