@@ -199,28 +199,6 @@ header.fixed-top + main {
   color: rgb(47, 58, 178);
 }
 
-.footer {
-  padding: 60px;
-}
-.footer__paragraph {
-  padding-left: 0px;
-  padding-right: 0px;
-  font-size: 17.5px;
-}
-.footer__link {
-  text-decoration: none;
-  color: rgb(59, 73, 223);
-}
-.footer__imgAnchor {
-  width: 44px;
-  height: 50px;
-  align-items: center;
-}
-.footer__imgAnchor--svg {
-  width: 24px;
-  height: 30px;
-}
-
 .row > * {
   padding-right: 5px;
   padding-left: 5px;
@@ -458,6 +436,18 @@ label.date {
   padding-left: 0;
 }
 
+.btn__login {
+  border: none;
+}
+.btn__login:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  color: rgb(47, 58, 178);
+}
+
+.btn__account {
+  font-weight: 500;
+}
+
 .post {
   font-size: 16px;
 }
@@ -673,4 +663,43 @@ label.date {
 }
 .post-aside-left .nav-icons--save:hover svg {
   fill: rgb(79, 70, 229);
+}
+
+.login {
+  margin-top: 120px;
+  width: 30%;
+}
+
+.btn__icon {
+  fill: white;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.btn__icon--forem {
+  background-color: 0a3e4a;
+  color: white;
+  fill: currentColor;
+}
+
+.btn__apps {
+  width: 85%;
+  margin: auto;
+  display: block;
+  color: white;
+  border-radius: 6px;
+  width: 544px;
+  height: 48px;
+  line-height: 24px;
+  font-size: 16px;
+}
+.btn__apps--apple {
+  background-color: #1b1b1b;
+}
+.btn__apps--apple:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background-color: #1b1b1b;
+  color: white;
+}
+.btn__apps--forem {
+  background-color: #0a3e4a;
 }/*# sourceMappingURL=style.css.map */
