@@ -1,4 +1,4 @@
- console.log('works')
+
 //navBar 
 const btnLogin = document.querySelector('#btn-login'); 
 const btnCreate = document.querySelector('#btn-create');
@@ -12,28 +12,28 @@ const main = document.querySelector('#main')
 btnLogin.addEventListener('click', (event) => {
     event.preventDefault(); 
     event.stopPropagation(); 
-    login.className += 'd-block'
-    main.className = 'd-none'
+    login.className = 'd-block'
+    login.className = 'd-none'
     const email = document.querySelector('[type="email"]').value; //obteniendo datos de los inputs
     const pass = document.querySelector('[type="password"]').value;
-  if(email === 'movebike@gmail.com' && pass ==='movebike'){
-    login.className = 'd-none'
-    main.className += 'd-block'
-    btnLogin.className = 'd-none'
-    btnCreate.className = 'd-none'
-
+  /*   if(email === 'movebike@gmail.com' && pass ==='movebike'){
+        list.className = 'd-block';
+        login.className = 'd-none';
+        buttonX.className += 'd-block';
+        buttonAddTask.className += 'd-block';
+        title.className = 'd-block';
     } else{
-        window.alert('Unable to login. Try again')   
+        window.alert('Sus credenciales no son válidas')   
     }
 
-  /*   buttonX.addEventListener('click', (event) => {
+    buttonX.addEventListener('click', (event) => {
         event.preventDefault();
         event.stopPropagation();
         login.className = 'd-block';
         list.className = 'd-none';
         buttonX.className = 'd-none';
         buttonAddTask.className = 'd-none';
-    });  */
+    }); */
 });
 
     /* buttonAddTask.addEventListener('click', (event) =>{

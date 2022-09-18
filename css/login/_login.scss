@@ -1,6 +1,6 @@
 .login{
-margin-top: 180px;
-width: 640px;
+margin-top: 80px;
+width: 70vh;
 
 &__title{
     font-size: 30px;
@@ -8,6 +8,9 @@ width: 640px;
     line-height: 37.5px;
     text-size-adjust: 100%;
     margin-bottom: 0;
+}
+&__text{
+    font-size: 16px;
 }
 
 &__anounce{
