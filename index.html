@@ -158,6 +158,7 @@
             </div>
         </nav>
     </header>
+    <!-- login section  -->
     <section class="container mx-auto login card mb-5 d-none" id="login">
         <div>
             <div class="mx-auto text-center mb-4">
@@ -203,7 +204,57 @@
           </form>
           <a href="#" class="text-decoration-none text-center mt-4 mb-3">I forgot my password</a>
     </section>
-
+    <!-- create post section -->
+    <section class="container crePost d-none" id="create-post">
+        
+        <div class="d-flex justify-content-between mt-3 crePost__letters">
+        <div class="d-flex">
+            <a class="navbar-brand" href="#"><img style="height:calc( 50px - .3125rem * 2)"
+                src="/assets/logos/logo-devto.png"></img></a>
+                <p class="mt-2 ms-3">Create Post</p>
+        </div>
+        <div class="d-flex mt-2">
+            <p class="me-2 btn">Edit</p>
+            <p class="btn">Preview</p>
+        </div>
+        </div>
+        <div class="crePost__container container card">
+        <article class="crePost__card mt-4">
+            <div>
+            <button class="crePost__btnAdd mt-2 mb-4 ms-2">Add a cover image</button>
+            <input type="text" class="form-control border-0 crePost__input" id="input-title" aria-describedby="emailHelp" placeholder="New post title here...">
+            <p class="ms-3  mb-4 mt-2 cePost__label">Add up to 4 tags...</p>
+            </div>
+        </article>     
+        </div>
+        <div class="text-center crePost__component">
+        <div class="crePost__components card d-inline me-5">
+            <svg class="crayons-icon me-2 mt-2" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 11h4.5a2.5 2.5 0 0 0 0-5H8v5Zm10 4.5a4.501 4.501 0 0 1-4.5 4.5H6V4h6.5a4.5 4.5 0 0 1 3.256 7.606A4.5 4.5 0 0 1 18 15.5ZM8 13v5h5.5a2.5 2.5 0 0 0 0-5H8Z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 20H7v-2h2.927l2.116-12H9V4h8v2h-2.927l-2.116 12H15v2Z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 15.536 16.95 14.12l1.414-1.414a5.001 5.001 0 0 0-3.531-8.551 5 5 0 0 0-3.54 1.48L9.879 7.05 8.464 5.636 9.88 4.222a7 7 0 1 1 9.9 9.9l-1.415 1.414zm-2.828 2.828-1.415 1.414a7 7 0 0 1-9.9-9.9l1.415-1.414L7.05 9.88l-1.414 1.414a5 5 0 1 0 7.071 7.071l1.414-1.414 1.415 1.414zm-.708-10.607 1.415 1.415-7.071 7.07-1.415-1.414 7.071-7.07z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M8 4h13v2H8zM5 3v3h1v1H3V6h1V4H3V3zM3 14v-2.5h2V11H3v-1h3v2.5H4v.5h2v1zm2 5.5H3v-1h2V18H3v-1h3v4H3v-1h2zM8 11h13v2H8zm0 7h13v2H8z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M8 4h13v2H8zM4.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 6.9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM8 11h13v2H8zm0 7h13v2H8z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M17 11V4h2v17h-2v-8H7v8H5V4h2v7z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5 3.871 3.871 0 0 1-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5 3.871 3.871 0 0 1-2.748-1.179z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m23 12-7.071 7.071-1.414-1.414L20.172 12l-5.657-5.657 1.414-1.414zM3.828 12l5.657 5.657-1.414 1.414L1 12l7.071-7.071 1.414 1.414z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5zm15 7-3.536 3.536-1.414-1.415L16.172 12 14.05 9.879l1.414-1.415zM7.828 12l2.122 2.121-1.414 1.415L5 12l3.536-3.536L9.95 9.88z"></path></svg>
+            <svg class="crayons-icon me-2 mt-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 9h8L11 24v-9H4l9-15v9Zm-2 2V7.22L7.532 13H13v4.394L17.263 11H11Z"></path></svg>
+            <svg class="crayons-icon c-btn__icon me-5 mt-2" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4v14l9.292-9.294a1 1 0 0 1 1.414 0L20 15.01V5zM2 3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V3.993zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg>
+        </div>
+        <svg class="crayons-icon c-btn__icon ms-5 mt-2" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm0-7a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm2-5a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"></path></svg>
+        </div>
+    
+        <div class="crePost__container crePost__container--text container card">
+            <div class="col-lg-10">    
+                <textarea name="user-message" id="user-message" cols="20"  rows="10" class="form-control border-0 crePost__inputtext" placeholder="Write your post content here"></textarea>
+            </div>
+        </div>
+        <div>
+            <button class="btn-publish mt-3 ms-5">Publish</button>
+        </div>
+        
+       
+    </section>
     <!-- MAIN CONTENT START -->
     <main id="main">
         <!-- Start Main conten -->

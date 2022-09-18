@@ -777,4 +777,130 @@ label.date {
 }
 .btn__apps--twitter {
   background-color: #0096f2;
+}
+
+.crePost {
+  width: 55%;
+  background-color: #f5f5f5;
+}
+.crePost__container {
+  max-width: 90%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+}
+.crePost__container--text {
+  height: 380px;
+  border-bottom: 1px solid #d2d2d2;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.crePost__card {
+  width: 90%;
+  margin: auto;
+}
+.crePost__letters {
+  font-size: 16px;
+  font-weight: 500;
+}
+.crePost__btnAdd {
+  border-color: rgb(214, 214, 215);
+  background-color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 6px, 14px, 14px, 6px;
+  width: 150px;
+  height: 40px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: rgb(61, 61, 61);
+}
+.crePost__input {
+  color: rgb(82, 82, 82);
+  font-size: 48px;
+  font-weight: 800;
+  height: 62px;
+  line-height: 60px;
+  height: 80px;
+}
+.crePost__input::-moz-placeholder {
+  color: rgb(82, 82, 82);
+  font-size: 48px;
+  font-weight: 800;
+  height: 62px;
+  line-height: 60px;
+}
+.crePost__input:-ms-input-placeholder {
+  color: rgb(82, 82, 82);
+  font-size: 48px;
+  font-weight: 800;
+  height: 62px;
+  line-height: 60px;
+}
+.crePost__input::placeholder {
+  color: rgb(82, 82, 82);
+  font-size: 48px;
+  font-weight: 800;
+  height: 62px;
+  line-height: 60px;
+}
+.crePost__input:focus {
+  background-color: white;
+  border-color: white;
+  box-shadow: none;
+}
+.crePost__label {
+  font-size: 1px;
+  font-weight: 400;
+  color: rgb(117, 117, 117);
+}
+.crePost__components {
+  background-color: rgb(249, 249, 249);
+  margin: auto;
+  border: none;
+}
+.crePost__component {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  background-color: rgb(249, 249, 249);
+  height: 40px;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+}
+.crePost__inputtext {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 16px;
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.crePost__inputtext:focus {
+  background-color: white;
+  border-color: white;
+  box-shadow: none;
+}
+
+.crayons-icon {
+  border-radius: 3px;
+}
+.crayons-icon:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  cursor: pointer;
+  background-size: auto;
+}
+
+.btn-publish {
+  border-radius: 5px;
+  background-color: rgb(47, 58, 178);
+  color: white;
+  width: 12%;
+  height: 33px;
+  margin-bottom: 40px;
+}
+.btn-publish:hover {
+  background-color: rgb(59, 73, 223);
 }/*# sourceMappingURL=style.css.map */
