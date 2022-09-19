@@ -1,16 +1,23 @@
-/* import * as login from './login.js' 
-
-
 const createPost = document.querySelector('#create-post')
+const main = document.querySelector('#main')
+const btnCreate = document.querySelector('#btn-post');
+const header = document.querySelector('#header');
+const footer = document.querySelector('#header');
+
 
 btnCreate.addEventListener('click', (event) => {
     event.preventDefault(); 
     event.stopPropagation(); 
+    console.log('works')
     createPost.className += 'd-block'
     main.className = 'd-none'
+    header.className = 'd-none'
+    footer.className = 'd-none'
 })
 
- */
+import * as module from './conecction.js'
+
+
 
 
 
