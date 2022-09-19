@@ -51,3 +51,7 @@ export const getPosts = (callback) => {
  * ? Obtener 1 post
  */
 export const getFristPost = (id) => getDoc(doc(db,"post", id));
+
+export const deletePostById = id => deleteDoc(doc(db ,'posts', id)) //id= q quieres eliminar 
+
+export const getPostById = id => getDoc(doc(db,'posts', id))
