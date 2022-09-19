@@ -1,9 +1,8 @@
 import { getPosts } from "./conecction.js";
 
-<<<<<<< HEAD
 
 
-btnLogin.addEventListener('click', (event) => {
+/*btnLogin.addEventListener('click', (event) => {
     event.preventDefault(); 
     event.stopPropagation(); 
     login.className += 'd-block'
@@ -26,13 +25,12 @@ btnContinue.addEventListener('click', (event) =>{
 }else{
     window.alert('Unable to login. Try again')   
 } 
-})
+})*/
 
 
 
  
   
-=======
 window.addEventListener("DOMContentLoaded", () => {
   const titles = document.querySelectorAll(".article__title");
   titles.forEach((h1) => {
@@ -46,4 +44,3 @@ window.addEventListener("DOMContentLoaded", () => {
   })
   
 });
->>>>>>> develop
