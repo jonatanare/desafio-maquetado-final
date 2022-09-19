@@ -26,14 +26,8 @@ const firebaseConfig = {
 /**
  * ? Función para guardar una tarea
  */
- export const savePost = async (img, titulo, etiquetas = [], contenido, fechaPublicada) => {
-  const objetoAGuardar = {
-    cover: img,
-    title: titulo,
-    tags: etiquetas,
-    content: contenido,
-    create_at: fechaPublicada
-  };
+ export const savePost = async (objetoAGuardar) => {
+  
   const canasta = collection(db, "post");
   //addDoc(canasta, objetoAGuardar);
   try {
@@ -58,6 +52,23 @@ export const getPosts = (callback) => {
  */
 export const getFristPost = (id) => getDoc(doc(db,"post", id));
 
-export const deletePostById = id => deleteDoc(doc(db ,'posts', id)) //id= q quieres eliminar 
+export const deletePostById = async id => {
+  //deleteDoc(doc(db ,'post', id)) //id= q quieres eliminar 
+  try {
+    const docRef = await deleteDoc(doc(db, 'post', id));
+    window.location.href = 'index.html'
+  } catch (error) {
+    alert('There was an error = ' + error);
+  }
+}
 
 export const getPostById = id => getDoc(doc(db,'post', id))
+
+export const updatePost = async (id, newFields) => {
+  try {
+    const docRef = await updateDoc(doc(db, 'post', id), newFields);
+    window.location.href = 'index.html'
+  } catch (error) {
+    alert('There was an error = ' + error);
+  }
+}
