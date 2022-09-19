@@ -477,6 +477,10 @@ label.date {
   font-weight: 500;
 }
 
+main {
+  margin-top: 70px;
+}
+
 .post {
   font-size: 16px;
 }
@@ -783,7 +787,6 @@ label.date {
   background-color: #0096f2;
 }
 
-<<<<<<< HEAD
 .profile {
   margin-top: 50px;
 }
@@ -860,7 +863,8 @@ label.date {
     width: 75%;
     margin: 0 auto;
   }
-=======
+}
+
 .crePost {
   background-color: #f5f5f5;
 }
@@ -982,5 +986,4 @@ textarea {
 }
 .btn-publish:hover {
   background-color: rgb(59, 73, 223);
->>>>>>> develop
 }/*# sourceMappingURL=style.css.map */

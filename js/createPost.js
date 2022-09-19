@@ -11,13 +11,12 @@ loadContent();
 save.addEventListener("click", (event) => {
   event.preventDefault();
   
-
   const img = "http://placeimg.com/806/338/tech";
   const title = document.querySelector("#input-title").value;
   const contenido = document.querySelector("#contenido").value;
   const titleElement = document.querySelector("#input-title");
   const contenidoElement = document.querySelector("#contenido");
-  const etiquetas = ["#javaScrit", "#html3", "#css", "#sass"];
+  const etiquetas = ["#javaScript", "#html5", "#css", "#sass"];
   let objetoAGuardar = {
     cover: img,
     title: title,
