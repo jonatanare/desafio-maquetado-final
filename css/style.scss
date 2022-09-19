@@ -1,4 +1,5 @@
-// Home
+// 
+@use './mixins';
 @use './home/_navbar';
 @use './home/_aside-left';
 @use './home/_aside-right';
@@ -19,5 +20,10 @@
 @use './login/_login';
 
 
+
+//profile
+@use './profile/profile';;
+
 //Create Post
 @use './post/createPost';
+
