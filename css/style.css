@@ -17,7 +17,6 @@
 .btn-sm {
   width: 40px;
   height: 40px;
-  margin-left: 15px;
 }
 
 .badge {
@@ -521,6 +520,7 @@ label.date {
 }
 .post__btn {
   font-size: 16px;
+  text-decoration: none !important;
 }
 .post__btn--programming:hover {
   background-color: rgba(137, 6, 6, 0.1);
@@ -648,6 +648,9 @@ label.date {
 .post__btn--programming span {
   color: #890606;
 }
+.post .btn {
+  padding: 0.3rem !important;
+}
 
 .aside__list {
   color: black;
@@ -696,7 +699,6 @@ label.date {
 
 .login {
   margin-top: 80px;
-  width: 70vh;
 }
 .login__title {
   font-size: 30px;
@@ -783,7 +785,6 @@ label.date {
   background-color: #0096f2;
 }
 
-<<<<<<< HEAD
 .profile {
   margin-top: 50px;
 }
@@ -860,7 +861,8 @@ label.date {
     width: 75%;
     margin: 0 auto;
   }
-=======
+}
+
 .crePost {
   background-color: #f5f5f5;
 }
@@ -982,5 +984,4 @@ textarea {
 }
 .btn-publish:hover {
   background-color: rgb(59, 73, 223);
->>>>>>> develop
 }/*# sourceMappingURL=style.css.map */
