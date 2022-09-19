@@ -22,7 +22,7 @@ btnContinue.addEventListener('click', (event) =>{
     event.stopPropagation(); 
     const email = document.querySelector('[type="email"]').value; 
     const pass = document.querySelector('[type="password"]').value;
-  if(email === 'movebike@gmail.com' && pass ==='movebike'){
+  if(email === 'movebike@gmail.com' && pass ==='movebike@gmail.com'){
     login.className = 'd-none'
     main.className += 'd-block'
     btnLogin.className = 'd-none'
