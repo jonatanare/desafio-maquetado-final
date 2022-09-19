@@ -4,9 +4,6 @@ const save = document.getElementById("savePost");
 
 var meses = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const hoy = new Date();
-
-
-
 save.addEventListener("click", (event) => {
   event.preventDefault();
   let fecha = hoy.getDate() + ' ' + ( meses[hoy.getMonth()] );
@@ -20,7 +17,7 @@ let fechaPublicada = `Posted on ${fecha} `;
 
   savePost(img, title, etiquetas, contenido, fechaPublicada);
 
-  window.location.href = 'index.html'
+  //window.location.href = 'index.html'
 });
 
 

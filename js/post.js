@@ -13,5 +13,5 @@ window.addEventListener('DOMContentLoaded', async () => {
     image.setAttribute('src', `${post.cover}`)
     image.className = 'w-100 m-0 img-fluid';
     title.innerText = post.title;
-    contenido.innerText = post.content
+    contenido.innerText = post.content;
 })
