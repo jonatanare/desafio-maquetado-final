@@ -15,3 +15,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     title.innerText = post.title;
     contenido.innerText = post.content;
 })
+
+let  valorId = setId;
+
+console.log(valorId);

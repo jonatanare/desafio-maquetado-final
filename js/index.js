@@ -32,6 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const wrapperTags = document.querySelector(".wrapper-tags");
   getPosts((post) => {
     post.forEach((doc) => {
+      let idPost = doc.id;
       const posts = doc.data();
 
       let etiquetas = posts.tags;
@@ -42,6 +43,8 @@ window.addEventListener("DOMContentLoaded", () => {
             <span>#</span> ${etiqueta}
           </a>
           `;
+
+          console.log(tag);
         }
 
       let article = `
@@ -57,7 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
                   </div>
               </div>
               <div class="identation p-3 ms-3 pt-2 wrapper-tags">
-                  <a class="article__link" href="#" data-id=${doc.id}>
+                  <a class="article__link" href="post.html" onclick="setIdPost(${idPost})">
                       <h2 class="article__title">${posts.title}
                       </h2>
                   </a>
@@ -105,6 +108,11 @@ window.addEventListener("DOMContentLoaded", () => {
       </article>
           `;
       wrapperArticles.innerHTML += article;
+      
     });
   });
 });
+
+setIdPost(id) = () => {
+  let setId = id
+}
