@@ -36,6 +36,7 @@ const firebaseConfig = {
   };
   const canasta = collection(db, "post");
   addDoc(canasta, objetoAGuardar);
+  //window.location.href = 'index.html'
 };
 
 
