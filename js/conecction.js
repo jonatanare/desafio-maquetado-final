@@ -23,11 +23,8 @@
   addDoc(collection(db, 'tasks'), {title, description}) //quiero añadir un documento en la colección de tareas que utiliza la conexión de db
 }
 
-saveTask = (titulo,descripcion) => {
-  const objetoAGuardar = {
-      title: titulo,  //le decimos que objeto queremos guardar que viene del addEventList del botón
-      description: descripcion
-  };
+
   const canasta = collection(db,"tasks"); //db tiene la conexión. queremos que te conectes a lal base de datos y almacenes este objeto en la colección("tasks"). Para llegar a esa canasta conectate en el db
   addDoc(canasta, objetoAGuardar) //donde lo voy a almacenar y que voy a almacenar
-};
+
+  

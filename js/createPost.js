@@ -2,20 +2,30 @@ const createPost = document.querySelector('#create-post')
 const main = document.querySelector('#main')
 const btnCreate = document.querySelector('#btn-post');
 const header = document.querySelector('#header');
-const footer = document.querySelector('#header');
+const footer = document.querySelector('#footer');
+const btnX = document.querySelector('#btn-X')
 
 
 btnCreate.addEventListener('click', (event) => {
     event.preventDefault(); 
     event.stopPropagation(); 
-    console.log('works')
-    createPost.className += 'd-block'
-    main.className = 'd-none'
-    header.className = 'd-none'
-    footer.className = 'd-none'
-})
+    createPost.className = 'd-block';
+    main.className = 'd-none';
+    header.className = 'd-none';
+    footer.className = 'd-none';
+});
 
-import * as module from './conecction.js'
+
+btnX.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    event.stopPropagation(); 
+    createPost.className = 'd-none';
+    main.className += 'd-block';
+    header.className += 'd-block';
+    footer.className += 'd-block';
+});
+
+
 
 
 
