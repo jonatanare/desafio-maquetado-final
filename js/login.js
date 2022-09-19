@@ -16,6 +16,7 @@ btnLogin.addEventListener('click', (event) => {
     event.stopPropagation(); 
     login.className += 'd-block'
     main.className = 'd-none'
+    console.log('desc')
 })
 
 btnContinue.addEventListener('click', (event) =>{
