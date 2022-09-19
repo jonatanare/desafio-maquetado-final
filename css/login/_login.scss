@@ -1,67 +1,69 @@
-.login{
-margin-top: 80px;
-width: 70vh;
+.login {
+    margin-top: 80px;
 
-&__title{
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 37.5px;
-    text-size-adjust: 100%;
-    margin-bottom: 0;
-}
-&__text{
-    font-size: 16px;
-}
-
-&__anounce{
-    font-size: 14px;
-    &::after{
-        border: 1px solid var(--base-20);
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        border-radius: var(--radius);
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37.5px;
+        text-size-adjust: 100%;
+        margin-bottom: 0;
     }
+
+    &__text {
+        font-size: 16px;
+    }
+
+    &__anounce {
+        font-size: 14px;
+
+        &::after {
+            border: 1px solid var(--base-20);
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            border-radius: var(--radius);
+        }
+    }
+
+    &__form {
+        width: 90%;
+    }
+
+    &__email {
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+
 }
 
-&__form{
-    width: 90%;
-}
-
-&__email{
-    font-size: 16px;
-    font-weight: 500;
-
-}
-
-}
-
-.btn__icon{
+.btn__icon {
     fill: white;
     margin-bottom: 5px;
     margin-right: 5px;
-    
 
-    &--forem{
+
+    &--forem {
         background-color: 0a3e4a;
         color: white;
         fill: currentColor;
     }
 }
 
-.btn__continue{
-background-color: rgba(59,73,223,1);
-font-weight: 500;
-height: 48px;
-&:hover{
-    background-color: rgba(47,58,178,1);
-}
+.btn__continue {
+    background-color: rgba(59, 73, 223, 1);
+    font-weight: 500;
+    height: 48px;
+
+    &:hover {
+        background-color: rgba(47, 58, 178, 1);
+    }
 }
 
 
-.btn__apps{
+.btn__apps {
     width: 90%;
     margin: auto;
     display: block;
@@ -76,21 +78,25 @@ height: 48px;
     font-weight: 500;
     font-stretch: 100%;
 
-    &--apple{
+    &--apple {
         background-color: #1b1b1b;
-        &:hover{
+
+        &:hover {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             background-color: #1b1b1b;
             color: white;
         }
     }
-    &--forem{
+
+    &--forem {
         background-color: #0a3e4a;
     }
-    &--github{
+
+    &--github {
         background-color: #24292e;
     }
-    &--twitter{
+
+    &--twitter {
         background-color: #0096f2;
     }
 }
