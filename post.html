@@ -32,7 +32,7 @@
                     <button class="btn bg-transparent btn-sm d-md-none">
                         <img src="./assets/icons/icon-search.svg" alt="Icon reach">
                     </button>
-                    <button class="btn btn-outline-primary m-auto d-none d-md-flex">Create Post</button>
+                    <a href="new.html" class="btn btn-outline-primary m-auto d-none d-md-flex" id="createPost">Create Post</a>
                     <button class="btn bg-transparent btn-sm position-relative ">
                         <img src="./assets/icons/icon-notifications.svg" alt="Icon notification">
                         <span class="position-absolute translate-middle badge bg-danger">
@@ -40,11 +40,11 @@
                             <span class="visually-hidden">unread messages</span>
                         </span>
                     </button>
-                    <button class="btn btn-sm p-1 wrapper-avatar c-btn" style="width: 40px;">
+                    <a href="jonatanare.html" class="btn btn-sm p-1 wrapper-avatar c-btn" style="width: 40px;">
                         <span class="btn-avatar">
                             <img class="img-avatar" src="./assets/home/avatar-home.webp" alt="Avatar Session">
                         </span>
-                    </button>
+                    </a>
                 </div>
 
 
@@ -206,8 +206,8 @@
                 <!-- Main content START -->
                 <div class="col-md-11 col-lg-8">
                     <article class="post card mb-2">
-                        <div>
-                            <img class="w-100 m-0" src="/assets/post/last-post-post.webp" alt="">
+                        <div class="coverPost">
+                            <!-- <img class="w-100 m-0 " src="/assets/post/last-post-post.webp" alt="Imagen cover"> -->
                         </div>
                         <div class="px-5 pt-3 pe-1">
                             <div class="d-flex ">
@@ -220,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="identation p-3 ms-1 pt-2 ps-0">
-                                    <h2 class="post__title">Meme Monday! 🤡
+                                    <h2 class="post__title">
                                     </h2>
                                 
                                 <div class="post d-flex mt-1">
@@ -500,6 +500,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
+    <script type="module" src="./js/post.js"></script>
+    
 </body>
 
 </html>

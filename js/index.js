@@ -1,13 +1,6 @@
-//LOG-IN
-const btnLogin = document.querySelector('#btn-login'); 
-const btnCreate = document.querySelector('#btn-create');
-const btnPost = document.querySelector('#btn-post');
-const btnNotif= document.querySelector('#btn-notif');
-const btnAvatar = document.querySelector('#btn-avatar');
-const login = document.querySelector('#login')
-const main = document.querySelector('#main')
-const btnContinue = document.querySelector('#btn-continue')
+import { getPosts } from "./conecction.js";
 
+<<<<<<< HEAD
 
 
 btnLogin.addEventListener('click', (event) => {
@@ -39,3 +32,18 @@ btnContinue.addEventListener('click', (event) =>{
 
  
   
+=======
+window.addEventListener("DOMContentLoaded", () => {
+  const titles = document.querySelectorAll(".article__title");
+  titles.forEach((h1) => {
+    getPosts((post) => {
+        post.forEach((doc) => {
+          const posts = doc.data();
+          h1.innerText = posts.title;
+          
+        });
+    });
+  })
+  
+});
+>>>>>>> develop
