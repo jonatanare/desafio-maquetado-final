@@ -10,12 +10,20 @@ const main = document.querySelector('#main')
 const btnContinue = document.querySelector('#btn-continue')
 
 
+btnPost.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    event.stopPropagation(); 
+    window.location.href = 'new.html'
+})
+
+
 
 btnLogin.addEventListener('click', (event) => {
     event.preventDefault(); 
     event.stopPropagation(); 
     login.className += 'd-block'
     main.className = 'd-none'
+    console.log('desc')
 })
 
 btnContinue.addEventListener('click', (event) =>{
