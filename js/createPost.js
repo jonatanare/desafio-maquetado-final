@@ -1,14 +1,16 @@
-import { savePost, getPostById } from "./conecction.js";
+import { savePost,getPostById, updatePost } from "./conecction.js";
 
 const save = document.getElementById("savePost");
 
 var meses = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const hoy = new Date();
+let idUrl;
+
+loadContent();
+
 save.addEventListener("click", (event) => {
   event.preventDefault();
-  let fecha = hoy.getDate() + ' ' + ( meses[hoy.getMonth()] );
-
-let fechaPublicada = `Posted on ${fecha} `; 
+  
 
   const img = "http://placeimg.com/806/338/tech";
   const title = document.querySelector("#input-title").value;
@@ -16,19 +18,32 @@ let fechaPublicada = `Posted on ${fecha} `;
   const titleElement = document.querySelector("#input-title");
   const contenidoElement = document.querySelector("#contenido");
   const etiquetas = ["#javaScrit", "#html3", "#css", "#sass"];
-
-  savePost(img, title, etiquetas, contenido, fechaPublicada);
+  let objetoAGuardar = {
+    cover: img,
+    title: title,
+    tags: etiquetas,
+    content: contenido
+  };
+  if(!idUrl){
+    let fecha = hoy.getDate() + ' ' + ( meses[hoy.getMonth()] );
+    let fechaPublicada = `Posted on ${fecha} `; 
+    objetoAGuardar.create_at = fechaPublicada;
+    savePost(objetoAGuardar);
+  }else{
+    updatePost(idUrl,objetoAGuardar);
+  }
+  
 
   
 });
 
 
-loadContent();
 function loadContent(){
   var url = new URL(window.location.href);
-  let idC = url.searchParams.get("id");
-  if(idC){
-    loadContentFromDB(idC);
+  idUrl = url.searchParams.get("id");
+  if(idUrl){
+    save.innerText = "Edit";
+    loadContentFromDB(idUrl);
   }
 }
 

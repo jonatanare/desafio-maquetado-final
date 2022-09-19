@@ -4,10 +4,10 @@ export const postTemplate = `
 <div class="px-4 pt-3">
     <div class="d-flex ">
         <div class="d-flex align-items-center me-0">
-            <img class="article__autor rounded-circle" src="/assets/home/autor3.webp" alt="">
+            <img class="article__autor rounded-circle" src="/assets/home/avatar-home.webp" alt="">
                 </div>
                 <div class=" ms-2 "> 
-                    <p class=" btn article__down name mb-0 p-1">Daniel</p>
+                    <p class=" btn article__down name mb-0 p-1">Movebike</p>
             <label class="date d-block ms-1">@posts_create_at@</label>
         </div>
     </div>
