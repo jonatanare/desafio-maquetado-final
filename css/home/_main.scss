@@ -271,3 +271,20 @@ label.date {
   }
 
 }
+
+.btn__login{
+  border: none;
+  &:hover{
+    background-color:rgba(59, 73, 223,.1) ;
+    color:rgba(47,58,178,1);
+
+  }
+}
+
+.btn__account{
+  font-weight: 500;
+}
+
+main{
+  margin-top: 70px;
+}

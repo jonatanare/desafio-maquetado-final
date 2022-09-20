@@ -10,10 +10,14 @@
 }
 .wrapper-avatar{
     border-radius: 9999px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 .btn-sm{
     width: 40px;
     height: 40px;
+    //margin-left: 15px;
+
 }
 
 .badge{
@@ -114,6 +118,9 @@ header.fixed-top + main {
     }
 }
 
+.formSearch{
+    transform: translateY(0);
+}
 .navbar-toggler{
     border: none;
 

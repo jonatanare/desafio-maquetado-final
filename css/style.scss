@@ -1,9 +1,10 @@
-// Home
-@use './home/navbar';
-@use './home/aside-left';
-@use './home/aside-right';
-@use './home/footer';
-@use './home/main';
+// 
+@use './mixins';
+@use './home/_navbar';
+@use './home/_aside-left';
+@use './home/_aside-right';
+@use './home/_footer';
+@use './home/_main';
 
 
 // Post
@@ -13,3 +14,16 @@
 
 
 @use './post/post_aside_left';
+
+
+//Log in
+@use './login/_login';
+
+
+
+//profile
+@use './profile/profile';;
+
+//Create Post
+@use './post/createPost';
+
