@@ -33,6 +33,10 @@ save.addEventListener("click", (event) => { //click para que me traiga la img, t
   const img = "http://placeimg.com/806/338/tech";
   const title = document.querySelector("#input-title").value;
   const contenido = document.querySelector("#contenido").value;
+  if(isNull(title) || isNull(contenido)){
+    alert('Incomplete data');
+    return;
+  }
   const titleElement = document.querySelector("#input-title");
   const contenidoElement = document.querySelector("#contenido");
   const etiquetas = ["#javaScript", "#html5", "#css", "#sass"];
@@ -51,8 +55,13 @@ save.addEventListener("click", (event) => { //click para que me traiga la img, t
     updatePost(idUrl,objetoAGuardar); //para actualizar post 
   }
   
-
+  
   
 });
+
+
+function isNull(str){
+  return str == undefined || str == null || str.trim().length<1
+}
 
 
