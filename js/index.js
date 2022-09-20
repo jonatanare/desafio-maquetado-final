@@ -15,14 +15,14 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const loadPosts2 = () =>{
+const loadPosts2 = () =>{ //cargar posts 
   const titles = document.querySelectorAll(".article__title");
   const wrapperArticles = document.querySelector(".wrapper-article");
   const wrapperTags = document.querySelector(".wrapper-tags");
   let cover = true;
   let coverImage;
-  getPosts((posts) => {
-    posts.forEach((doc) => {
+  getPosts((posts) => { //te trae de la base de datos la lista de posts 
+    posts.forEach((doc) => { //por cada post que me haga essto 
       const post = doc.data();
       coverImage = '';
       let etiquetas = post.tags;
@@ -44,47 +44,3 @@ const loadPosts2 = () =>{
   })
 }
 
-const loadPosts = () =>{
-  const titles = document.querySelectorAll(".article__title");
-  const articles = document.querySelectorAll("#articles");
-  let p;
-  getPosts((posts) => {
-      posts.forEach((doc) => {
-        const d = doc.data();
-        p = new Post(d.title, d.description);
-        const articleElement = p.getArticle();
-        articles.appendChild();
-      });
-  });
-}
-
-
-class Post{ //generaremos un nuevo objeto del cual se crearán instancias 
-    
-  constructor(title, description){ //método constructor(palabra reservada para las clases) -> tendrá los datos q la función constructora tiene
-    this.title = title;
-    this.description = description;
-  }
-
-  
-  build(doc){ //método constructor(palabra reservada para las clases) -> tendrá los datos q la función constructora tiene
-    this.title = doc.data().title;
-    this.description = doc.data().description;
-  }
-
-  getPostElement(){
-      let articleStr = postTemplate;
-      articleStr = article.replace('@title@',this.title);
-      const article = document.createElement(articleStr);
-      return article;
-  }
-  async fillPostById(id){
-    const doc = await getPostById(id)
-    this.build(doc);
-  }
-
-  deleteById(id){
-    deletePostById(id);
-  }
-
-}

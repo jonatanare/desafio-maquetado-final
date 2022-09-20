@@ -8,7 +8,26 @@ let idUrl;
 
 loadContent();
 
-save.addEventListener("click", (event) => {
+function loadContent(){
+  let url = new URL(window.location.href);
+  idUrl = url.searchParams.get("id"); //url parameter 
+  if(idUrl){
+    save.innerText = "Edit"; //btn de save por edit 
+    loadContentFromDB(idUrl);
+  }
+}
+
+
+async function loadContentFromDB(id){ //traer de la base de datos el id  await para que se espere a que busque en la db
+  const doc = await getPostById(id);
+  const post = doc.data();
+
+  document.querySelector("#contenido").value = post.content; //accediendo a contenido de post 
+  document.querySelector("#input-title").value = post.title;
+
+}
+
+save.addEventListener("click", (event) => { //click para que me traiga la img, title, contenido, etc
   event.preventDefault();
   
   const img = "http://placeimg.com/806/338/tech";
@@ -17,19 +36,19 @@ save.addEventListener("click", (event) => {
   const titleElement = document.querySelector("#input-title");
   const contenidoElement = document.querySelector("#contenido");
   const etiquetas = ["#javaScript", "#html5", "#css", "#sass"];
-  let objetoAGuardar = {
+  let objetoAGuardar = { //obj q se guarda en db 
     cover: img,
     title: title,
     tags: etiquetas,
     content: contenido
   };
   if(!idUrl){
-    let fecha = hoy.getDate() + ' ' + ( meses[hoy.getMonth()] );
+    let fecha = hoy.getDate() + ' ' + ( meses[hoy.getMonth()] ); //si no triago el id crearemos uno nuevo 
     let fechaPublicada = `Posted on ${fecha} `; 
     objetoAGuardar.create_at = fechaPublicada;
     savePost(objetoAGuardar);
   }else{
-    updatePost(idUrl,objetoAGuardar);
+    updatePost(idUrl,objetoAGuardar); //para actualizar post 
   }
   
 
@@ -37,21 +56,3 @@ save.addEventListener("click", (event) => {
 });
 
 
-function loadContent(){
-  var url = new URL(window.location.href);
-  idUrl = url.searchParams.get("id");
-  if(idUrl){
-    save.innerText = "Edit";
-    loadContentFromDB(idUrl);
-  }
-}
-
-
-async function loadContentFromDB(id){
-  const doc = await getPostById(id);
-  const post = doc.data();
-
-  document.querySelector("#contenido").value = post.content;
-  document.querySelector("#input-title").value = post.title;
-
-}
