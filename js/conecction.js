@@ -44,7 +44,7 @@ const firebaseConfig = {
  */
 export const getPosts = (callback) => {
   const data = collection(db, 'post');
-  onSnapshot(data, callback);
+  onSnapshot(data, callback); //snapshot hace q sea en tiempor real 
 }
 
 /**
@@ -54,7 +54,7 @@ export const getFristPost = (id) => getDoc(doc(db,"post", id));
 
 export const deletePostById = async id => {
   //deleteDoc(doc(db ,'post', id)) //id= q quieres eliminar 
-  try {
+  try { //intenta y si hay un error manda el catch 
     const docRef = await deleteDoc(doc(db, 'post', id));
     window.location.href = 'index.html'
   } catch (error) {
