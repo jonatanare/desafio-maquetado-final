@@ -1,21 +1,12 @@
-import { getPosts, deletePostById, getPostById} from "./conecction.js";
-import * as login from './login.js'
-import { coverImageTemplate, postTemplate, tagsTemplate} from './templates.js'
+import { getPosts, deletePostById, getPostById } from "./conecction.js";
+import * as login from "./login.js";
+import { coverImageTemplate, postTemplate, tagsTemplate } from "./templates.js";
 
-
-
-
-
- 
-  
 window.addEventListener("DOMContentLoaded", () => {
   loadPosts2();
-  
-  
 });
 
-
-const loadPosts2 = () =>{
+const loadPosts2 = () => {
   const titles = document.querySelectorAll(".article__title");
   const wrapperArticles = document.querySelector(".wrapper-article");
   const wrapperTags = document.querySelector(".wrapper-tags");
@@ -24,67 +15,53 @@ const loadPosts2 = () =>{
   getPosts((posts) => {
     posts.forEach((doc) => {
       const post = doc.data();
-      coverImage = '';
+      coverImage = "";
       let etiquetas = post.tags;
-      let tagString = '';
+      let tagString = "";
       for (const etiqueta of etiquetas) {
-        tagString += tagsTemplate.replaceAll('@etiqueta@',etiqueta);
+        tagString += tagsTemplate.replaceAll("@etiqueta@", etiqueta);
       }
-      if(cover){
-        coverImage = coverImageTemplate.replaceAll('@coverImg@',post.cover);
+      if (cover) {
+        coverImage = coverImageTemplate.replaceAll("@coverImg@", post.cover);
         cover = false;
       }
-      wrapperArticles.innerHTML += postTemplate.
-                                  replace('@tags_replace@',tagString).
-                                  replaceAll('@posts_create_at@',post.create_at).
-                                  replaceAll('@posts_title@',post.title).
-                                  replaceAll('@doc_id@',doc.id).
-                                  replaceAll('@coverImage@',coverImage);
+      wrapperArticles.innerHTML += postTemplate
+        .replace("@tags_replace@", tagString)
+        .replaceAll("@posts_create_at@", post.create_at)
+        .replaceAll("@posts_title@", post.title)
+        .replaceAll("@doc_id@", doc.id)
+        .replaceAll("@coverImage@", coverImage);
     });
-  })
-}
-
-const loadPosts = () =>{
-  const titles = document.querySelectorAll(".article__title");
-  const articles = document.querySelectorAll("#articles");
-  let p;
-  getPosts((posts) => {
-      posts.forEach((doc) => {
-        const d = doc.data();
-        p = new Post(d.title, d.description);
-        const articleElement = p.getArticle();
-        articles.appendChild();
-      });
   });
-}
+};
 
+class Post {
+  //generaremos un nuevo objeto del cual se crearán instancias
 
-class Post{ //generaremos un nuevo objeto del cual se crearán instancias 
-    
-  constructor(title, description){ //método constructor(palabra reservada para las clases) -> tendrá los datos q la función constructora tiene
+  constructor(title, description) {
+    //método constructor(palabra reservada para las clases) -> tendrá los datos q la función constructora tiene
     this.title = title;
     this.description = description;
   }
 
-  
-  build(doc){ //método constructor(palabra reservada para las clases) -> tendrá los datos q la función constructora tiene
+  build(doc) {
+    //método constructor(palabra reservada para las clases) -> tendrá los datos q la función constructora tiene
     this.title = doc.data().title;
     this.description = doc.data().description;
   }
 
-  getPostElement(){
-      let articleStr = postTemplate;
-      articleStr = article.replace('@title@',this.title);
-      const article = document.createElement(articleStr);
-      return article;
+  getPostElement() {
+    let articleStr = postTemplate;
+    articleStr = article.replace("@title@", this.title);
+    const article = document.createElement(articleStr);
+    return article;
   }
-  async fillPostById(id){
-    const doc = await getPostById(id)
+  async fillPostById(id) {
+    const doc = await getPostById(id);
     this.build(doc);
   }
 
-  deleteById(id){
+  deleteById(id) {
     deletePostById(id);
   }
-
 }
