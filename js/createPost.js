@@ -1,4 +1,4 @@
-import { savePost,getPostById, updatePost } from "./conecction.js";
+import { savePost, getPostById, updatePost } from "./conecction.js";
 
 const save = document.getElementById("savePost");
 
@@ -59,10 +59,10 @@ save.addEventListener("click", (event) => {
     objetoAGuardar.create_at = fechaPublicada;
     savePost(objetoAGuardar);
   }else{
-    updatePost(idUrl,objetoAGuardar);
+    updatePost(idUrl,objetoAGuardar); //para actualizar post 
   }
   
-
+  
   
 });
 

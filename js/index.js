@@ -12,8 +12,8 @@ const loadPosts2 = () => {
   const wrapperTags = document.querySelector(".wrapper-tags");
   let cover = true;
   let coverImage;
-  getPosts((posts) => {
-    posts.forEach((doc) => {
+  getPosts((posts) => { //te trae de la base de datos la lista de posts 
+    posts.forEach((doc) => { //por cada post que me haga essto 
       const post = doc.data();
       coverImage = "";
       let etiquetas = post.tags;
