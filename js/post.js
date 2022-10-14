@@ -11,7 +11,7 @@ const datePost = document.querySelector('.date');
 let id;
 
 window.addEventListener('DOMContentLoaded', async () => {
-    var url = new URL(window.location.href);
+    let url = new URL(window.location.href);
     id = url.searchParams.get("id");
     const doc = await getPostById(id);
     let post = doc.data();

@@ -1,4 +1,4 @@
-import { savePost,getPostById, updatePost } from "./conecction.js";
+import { savePost, getPostById, updatePost } from "./conecction.js";
 
 const save = document.getElementById("savePost");
 
