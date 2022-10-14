@@ -18,8 +18,61 @@
     />
     <title>Home</title>
   </head>
+<!-- Navbar -->
+<header class="navbar-light fixed-top header-static bg-white shadow-sm" id="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container p-md-0">
+            <div class="d-flex ml-2">
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img style="height:calc( 50px - .3125rem * 2)" src="/assets/logos/logo-devto.png" />
+                </a>
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block form-search">
+                    <div class="wrapper-search position-relative">
+                        <input class="form-control mr-sm-2 w-100 " type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn position-absolute b-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                aria-hidden="true" class="crayons-icon c-btn__icon" focusable="false">
+                                <path
+                                    d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z">
+                                </path>
+                            </svg>
+                        </button>
 
-<!-- login section  --> <!-- login section  -->
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="d-flex items-center h-100 ml-auto">
+                <button class="btn bg-transparent btn-sm d-md-none">
+                    <img src="./assets/icons/icon-search.svg" alt="Icon reach">
+                </button>
+                <button class="btn btn__login btn-outline-primary m-auto me-1 d-none d-md-flex" id="btn-login"><a href="./login.html"> Login </a></button>
+                <button class="btn btn__account btn-outline-primary m-auto me-1" id="btn-create"> Create
+                    Account</button>
+
+                <button class="btn btn-outline-primary m-auto d-none" id="btn-post"> <a href="./new.html"> Create Post</a></button>
+                <button class="btn bg-transparent btn-sm position-relative d-none" id="btn-notif">
+                    <img src="./assets/icons/icon-notifications.svg" alt="Icon notification">
+                    <span class="position-absolute translate-middle badge bg-danger">
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+                <a href="jonatanare.html" class="btn btn-sm p-1 wrapper-avatar c-btn d-none" id="btn-avatar">
+                    <span class="btn-avatar">
+                        <img class="img-avatar" src="./assets/home/avatar-home.webp" alt="Avatar Session">
+                    </span>
+                </a>
+            </div>
+        </div>
+</nav>
+</header>
+<!-- Create Account section  -->
 <section class="container-fluid main mx-auto login mb-5" id="login">
     <div class="container">
         <div class="row">
