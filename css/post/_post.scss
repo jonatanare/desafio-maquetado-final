@@ -1,212 +1,260 @@
-.post{
+.post {
   font-size: 16px;
-  span{
-      font-weight: 700;
+
+  span {
+    font-weight: 700;
   }
+
   &__down {
-      border: none;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 45px;
-      &:hover {
-        color:rgb(47, 58, 178);
-      }
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 45px;
+
+    &:hover {
+      color: rgb(47, 58, 178);
     }
+  }
+
   &__title {
     font-size: 36px;
     font-weight: 800;
     line-height: 45px;
     text-size-adjust: 100%;
-    
+
   }
 
-  &__text{
-      font-size: 18px;
-      line-height: 24px;
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
   }
-  
+
 
   &__autor {
     width: 40px;
     height: 40px;
   }
 
-  &__logo{
+  &__logo {
     width: 32px;
     height: 32px;
   }
-  &__input{
+
+  &__input {
     width: 100%;
     height: 64px;
     padding: 5px;
-    border-radius:5px;  
+    border-radius: 5px;
     border: 1px solid gray;
 
-    
+
   }
+
   &__btn {
     font-size: 16px;
+    text-decoration: none !important;
+
+
     &--programming {
       &:hover {
         background-color: rgba(137, 6, 6, 0.1);
         border-color: #890606;
       }
+
       span {
         color: #890606;
       }
     }
+
     &--design {
       &:hover {
         background-color: rgba(6, 255, 106, 0.1);
         border-color: #06ff6a;
       }
+
       span {
         color: #06ff6a;
       }
     }
+
     &--beginners {
       &:hover {
         background-color: rgba(0, 131, 53, 0.1);
         border-color: #008335;
       }
+
       span {
         color: #008335;
       }
     }
+
     &--productivity {
       &:hover {
         background-color: rgba(42, 7, 152, 0.1);
         border-color: #2a0798;
       }
+
       span {
         color: #2a0798;
       }
     }
+
     &--showdev {
       &:hover {
         background-color: rgba(9, 27, 71, 0.1);
         border-color: #091b47;
       }
+
       span {
         color: #091b47;
       }
     }
+
     &--sideprojects {
       &:hover {
         background-color: rgba(59, 73, 223, 0.1);
         border-color: #3b49df;
       }
+
       span {
         color: #3b49df;
       }
     }
+
     &--watercooler {
       &:hover {
         background-color: rgba(208, 236, 255, 0.1);
         border-color: #d0ecff;
       }
+
       span {
         color: #d0ecff;
       }
     }
+
     &--save {
       background-color: #d6d6d7;
       border: none;
+
       &:hover {
         background-color: #bdbdbd;
       }
     }
+
     &--watercooler {
       &:hover {
         background-color: rgba(208, 236, 255, 0.1);
         border-color: #d0ecff;
       }
+
       span {
         color: #d0ecff;
       }
     }
+
     &--discuss {
       &:hover {
         background-color: rgba(26, 214, 67, 0.10);
         border-color: #1ad643;
       }
+
       span {
         color: #1ad643;
       }
     }
+
     &--ux {
       &:hover {
         background-color: rgba(0, 101, 179, 0.10);
         border-color: #0065B3;
       }
+
       span {
         color: #0065B3;
       }
     }
+
     &--css {
       &:hover {
         background-color: rgba(41, 101, 241, 0.10);
         border-color: #2965F1;
       }
+
       span {
         color: #2965F1;
       }
     }
+
     &--computerscience {
       &:hover {
         background-color: rgba(217, 140, 217, 0.10);
-        border-color:#d98cd9;
+        border-color: #d98cd9;
       }
+
       span {
         color: #d98cd9;
       }
     }
+
     &--kubernetes {
       &:hover {
         background-color: rgba(50, 109, 230, 0.10);
-        border-color:#326de6;
+        border-color: #326de6;
       }
+
       span {
         color: #326de6;
       }
     }
+
     &--webdev {
       &:hover {
         background-color: rgba(86, 39, 101, 0.10);
-        border-color:#562765;
+        border-color: #562765;
       }
+
       span {
         color: #562765;
       }
     }
+
     &--flutter {
       &:hover {
         background-color: rgba(86, 197, 246, 0.10);
-        border-color:#56C5F6;
+        border-color: #56C5F6;
       }
+
       span {
         color: #56C5F6;
       }
     }
+
     &--android {
       &:hover {
         background-color: rgba(86, 160, 54, 0.10);
-        border-color:#56a036;
+        border-color: #56a036;
       }
+
       span {
         color: #56a036;
       }
     }
+
     &--programming {
       &:hover {
         background-color: rgba(137, 6, 6, 0.10);
-        border-color:#890606;
+        border-color: #890606;
       }
+
       span {
         color: #890606;
       }
     }
-      
+
   }
- 
+
+  .btn{
+    padding: 0.3rem!important;
+  }
+
 }
