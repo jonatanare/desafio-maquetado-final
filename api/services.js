@@ -13,6 +13,17 @@ function getPosts() {
     return fetch(URL, options)
 }
 
+function getPostById(id) {
+    const URL = `${URL_BASE_API}/posts/${id}`
+    const options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'applications/json'
+        }
+    }
+    return fetch(URL, options)
+}
+
 function login(credentials) {
     const URL = `${URL_BASE_API}/auth/login`
     const options = {
@@ -24,4 +35,4 @@ function login(credentials) {
     }
 }
 
-export { getPosts, login}
+export { getPosts, login, getPostById}
