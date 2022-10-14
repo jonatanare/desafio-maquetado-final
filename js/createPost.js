@@ -32,63 +32,29 @@ async function loadContentFromDB(id){ //lo que se pintarà cuando le des editar
 
 
 
-function loadContent(){
-  let url = new URL(window.location.href);
-  idUrl = url.searchParams.get("id"); //url parameter 
-  if(idUrl){
-    save.innerText = "Edit"; //btn de save por edit 
-    loadContentFromDB(idUrl);
-  }
-}
-
-
-async function loadContentFromDB(id){ //traer de la base de datos el id  await para que se espere a que busque en la db
-  const doc = await getPostById(id);
-  const post = doc.data();
-
-  document.querySelector("#contenido").value = post.content; //accediendo a contenido de post 
-  document.querySelector("#input-title").value = post.title;
-
-}
-
-save.addEventListener("click", (event) => { //click para que me traiga la img, title, contenido, etc
+save.addEventListener("click", (event) => {
   event.preventDefault();
   
   const img = "http://placeimg.com/806/338/tech";
   const title = document.querySelector("#input-title").value;
   const contenido = document.querySelector("#contenido").value;
-<<<<<<< HEAD
-=======
 
->>>>>>> fe10ffa9d821ecc7e3a20bc89f77330faab2ebde
   if(isNull(title) || isNull(contenido)){
     alert('Incomplete data');
     return;
   }
-<<<<<<< HEAD
-  const titleElement = document.querySelector("#input-title");
-  const contenidoElement = document.querySelector("#contenido");
-  const etiquetas = ["#javaScript", "#html5", "#css", "#sass"];
-  let objetoAGuardar = { //obj q se guarda en db 
-=======
 
   const titleElement = document.querySelector("#input-title");
   const contenidoElement = document.querySelector("#contenido");
   const etiquetas = ["#javaScript", "#html5", "#css", "#sass"];
   let objetoAGuardar = { //se construye el json a partir del formulario
->>>>>>> fe10ffa9d821ecc7e3a20bc89f77330faab2ebde
     cover: img,
     title: title,
     tags: etiquetas,
     content: contenido
   };
-<<<<<<< HEAD
-  if(!idUrl){
-    let fecha = hoy.getDate() + ' ' + ( meses[hoy.getMonth()] ); //si no triago el id crearemos uno nuevo 
-=======
   if(!idUrl){ //si no hay url se realiza la funciòn de crear un nuevo post, ,agregando al json la fecha de creaciòn
     let fecha = hoy.getDate() + ' ' + ( meses[hoy.getMonth()] );
->>>>>>> fe10ffa9d821ecc7e3a20bc89f77330faab2ebde
     let fechaPublicada = `Posted on ${fecha} `; 
     objetoAGuardar.create_at = fechaPublicada;
     savePost(objetoAGuardar);
@@ -100,15 +66,6 @@ save.addEventListener("click", (event) => { //click para que me traiga la img, t
   
 });
 
-<<<<<<< HEAD
-
 function isNull(str){
   return str == undefined || str == null || str.trim().length<1
 }
-
-
-=======
-function isNull(str){
-  return str == undefined || str == null || str.trim().length<1
-}
->>>>>>> fe10ffa9d821ecc7e3a20bc89f77330faab2ebde
