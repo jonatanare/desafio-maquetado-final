@@ -52,7 +52,7 @@ export const getPosts = (callback) => {
  */
 export const getFristPost = (id) => getDoc(doc(db,"post", id));
 
-export const deletePostById = async id => {
+export const deletePostById = async id => { //await para esperar q me regrese el id 
   //deleteDoc(doc(db ,'post', id)) //id= q quieres eliminar 
   try { //intenta y si hay un error manda el catch 
     const docRef = await deleteDoc(doc(db, 'post', id));
@@ -65,7 +65,7 @@ export const deletePostById = async id => {
 export const getPostById = id => getDoc(doc(db,'post', id))
 
 export const updatePost = async (id, newFields) => {
-  try {
+  try { //intenta realizar sino catch el error y dámelo 
     const docRef = await updateDoc(doc(db, 'post', id), newFields);
     window.location.href = 'index.html'
   } catch (error) {

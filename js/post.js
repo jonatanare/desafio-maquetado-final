@@ -11,7 +11,7 @@ const datePost = document.querySelector('.date');
 let id;
 
 window.addEventListener('DOMContentLoaded', async () => {
-    var url = new URL(window.location.href);
+    let url = new URL(window.location.href);
     id = url.searchParams.get("id");
     const doc = await getPostById(id);
     let post = doc.data();
@@ -26,11 +26,11 @@ window.addEventListener('DOMContentLoaded', async () => {
     tags.innerHTML = getTags(post);
 })
 
-edit.addEventListener('click',  (event) => {
+edit.addEventListener('click',  (event) => { //me redirecciona a html concatenando el id 
     event.preventDefault();
     window.location.href = 'new.html?id='+id;
 });
-deleteB.addEventListener('click',  (event) => {
+deleteB.addEventListener('click',  (event) => { 
     event.preventDefault();
     const opcion = confirm("Are you sure you want to delete this Post?");
     if (opcion == true) {
